@@ -82,7 +82,6 @@ export const generateSource = async (): Promise<Source> => {
     description: '',
     iconURL: 'https://i.imgur.com/qzd5WdZ.png',
     website: 'https://myani.org',
-    patreonURL: '',
     tintColor: '#6156e2',
     featuredApps: [stableApp.bundleIdentifier],
     apps: [stableApp, betaApp],
