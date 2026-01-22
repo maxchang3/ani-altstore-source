@@ -26,17 +26,20 @@ const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
     ],
     ipad: [
       {
-        imageURL: 'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-home.png?raw=true',
+        imageURL:
+          'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-home.png?raw=true',
         width: 2966,
         height: 1576,
       },
       {
-        imageURL: 'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-search.png?raw=true',
+        imageURL:
+          'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-search.png?raw=true',
         width: 2722,
         height: 1742,
       },
       {
-        imageURL: 'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-search-detail.png?raw=true',
+        imageURL:
+          'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-search-detail.png?raw=true',
         width: 2528,
         height: 1742,
       },
@@ -52,7 +55,16 @@ const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
 export const generateSource = async (): Promise<Source> => {
   const updates = await fetchUpdates()
 
-  const allVersions = await Promise.all(updates.updates.map(updateToSourceVersion))
+  const allVersionResults = await Promise.all(updates.updates.map(updateToSourceVersion))
+
+  const allVersions = allVersionResults.filter(
+    (version): version is SourceVersion => version !== null
+  )
+
+  if (allVersionResults.length !== allVersions.length) {
+    const filteredCount = allVersionResults.length - allVersions.length
+    console.warn(`[warn] 过滤掉了 ${filteredCount} 个无法下载的版本`)
+  }
 
   const stableVersions: SourceVersion[] = []
   const betaVersions: SourceVersion[] = []
