@@ -78,8 +78,6 @@ export const generateSource = async (): Promise<Source> => {
 
   const source: Source = {
     name: 'open-ani',
-    subtitle: '',
-    description: '',
     iconURL: 'https://i.imgur.com/qzd5WdZ.png',
     website: 'https://myani.org',
     tintColor: '#6156e2',
