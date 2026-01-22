@@ -7,9 +7,7 @@ const isBetaVersion = (version: string) => version.includes('alpha') || version.
 const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
   name: baseName,
   bundleIdentifier: 'org.openani.Animeko',
-  marketplaceID: '',
   developerName: 'open-ani',
-  subtitle: 'An awesome app.',
   localizedDescription:
     '集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。',
   iconURL: 'https://i.imgur.com/qzd5WdZ.png',

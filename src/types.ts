@@ -37,9 +37,9 @@ export interface SourceVersion {
 export interface App {
   name: string
   bundleIdentifier: string
-  marketplaceID: string
+  marketplaceID?: string
   developerName: string
-  subtitle: string
+  subtitle?: string
   localizedDescription: string
   iconURL: string
   tintColor: string
