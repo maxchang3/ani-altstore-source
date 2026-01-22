@@ -9,7 +9,7 @@ It can be used with AltStore, [SideStore](https://sidestore.io/), [LiveContainer
 Import this source URL into your AltStore-compatible app:
 
 ```
-https://raw.githubusercontent.com/maxchang3/ani-altstore-source/refs/heads/main/generated/apps.json
+https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json
 ```
 
 ---
@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/maxchang3/ani-altstore-source/refs/heads/main/
 将此源 URL 导入到支持 AltStore 源格式的应用中：
 
 ```
-https://raw.githubusercontent.com/maxchang3/ani-altstore-source/refs/heads/main/generated/apps.json
+https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json
 ```
 
 ## License
