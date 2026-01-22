@@ -1,0 +1,59 @@
+{
+  "name": "pkg-placeholder",
+  "version": "0.0.0",
+  "description": "_description_",
+  "keywords": [],
+  "homepage": "https://github.com/maxchang3/pkg-placeholder#readme",
+  "bugs": "https://github.com/maxchang3/pkg-placeholder/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxchang3/pkg-placeholder.git"
+  },
+  "license": "MIT",
+  "author": "maxchang3",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch --sourcemap",
+    "lint": "biome check",
+    "lint:fix": "biome check --write .",
+    "prepare": "simple-git-hooks",
+    "release": "bumpp && pnpm publish",
+    "start": "tsx src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpx lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.11",
+    "@maxchang/biome-config": "^0.1.7",
+    "@types/node": "^22.19.5",
+    "bumpp": "10.0.3",
+    "lint-staged": "^16.2.7",
+    "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.19.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.16"
+  },
+  "packageManager": "pnpm@10.28.0"
+}
