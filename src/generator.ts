@@ -87,7 +87,7 @@ export const generateSource = async (): Promise<Source> => {
 
   const source: Source = {
     name: 'OpenAni',
-    iconURL: 'https://i.imgur.com/qzd5WdZ.png',
+    iconURL: 'https://avatars.githubusercontent.com/u/166622089',
     website: 'https://myani.org',
     tintColor: '#6156e2',
     featuredApps: [stableApp.bundleIdentifier],
