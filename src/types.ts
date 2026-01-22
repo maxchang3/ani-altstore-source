@@ -27,7 +27,7 @@ export interface SourceVersion {
   version: string
   buildVersion: string
   date: string
-  size?: number
+  size: number
   downloadURL: string
   localizedDescription: string
   minOSVersion?: string
@@ -43,8 +43,16 @@ export interface App {
   localizedDescription: string
   iconURL: string
   tintColor: string
-  category?: 'developer' | 'entertainment' | 'games' | 'lifestyle' | 'other' | 'photo-video' | 'social' | 'utilities'
-  screenshots: Array<iPadElement | string> | ScreenshotsClass
+  category?:
+    | 'developer'
+    | 'entertainment'
+    | 'games'
+    | 'lifestyle'
+    | 'other'
+    | 'photo-video'
+    | 'social'
+    | 'utilities'
+  screenshots: Array<imageWithSize | string> | ScreenshotsClass
   versions: SourceVersion[]
   appPermissions: {
     entitlements: string[]
@@ -58,15 +66,15 @@ export interface App {
   }
 }
 
-interface iPadElement {
+interface imageWithSize {
   imageURL: string
   width: number
   height: number
 }
 
 interface ScreenshotsClass {
-  iphone: Array<iPadElement | string>
-  ipad: iPadElement[]
+  iphone: Array<imageWithSize | string>
+  ipad: imageWithSize[]
 }
 
 interface News {
