@@ -14,5 +14,6 @@ This is a custom AltStore source for [Animeko](https://myani.org), an all-in-one
 
 <!-- Badges -->
 
+[license-src]: https://img.shields.io/github/license/maxchang3/ani-altstore-source.svg?style=flat&colorA=080f12&colorB=1fa669
 [license-href]: https://github.com/maxchang3/ani-altstore-source/blob/main/LICENSE
 
