@@ -1,7 +1,5 @@
 {
   "name": "open-ani",
-  "subtitle": "",
-  "description": "",
   "iconURL": "https://i.imgur.com/qzd5WdZ.png",
   "website": "https://myani.org",
   "tintColor": "#6156e2",
@@ -101,7 +99,8 @@
           "version": "4.10.0",
           "date": "2025-05-03T17:40:18.000Z",
           "localizedDescription": "优化播放和缓存体验: \r\n\r\n- 选集播放中将 SP 和正片分开\r\n- BT 服务空闲时不再显示通知\r\n- 支持复制播放链接和 (安卓) 使用外部应用播放",
-          "downloadURL": "https://d2.myani.org/v4.10.0/ani-4.10.0.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.10.0/ani-4.10.0.ipa",
+          "size": 34533795,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
@@ -109,7 +108,8 @@
           "version": "4.10.1",
           "date": "2025-05-04T10:31:29.000Z",
           "localizedDescription": "适配新 Bangumi 接口，修复某些番加载错误的问题\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.0...v4.10.1",
-          "downloadURL": "https://d2.myani.org/v4.10.1/ani-4.10.1.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.10.1/ani-4.10.1.ipa",
+          "size": 34531759,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
@@ -117,7 +117,8 @@
           "version": "4.11.0",
           "date": "2025-05-28T08:54:02.000Z",
           "localizedDescription": "优化播放体验:\r\n\r\n- 修复 Desktop 切换数据源会导致 UI 卡死的问题\r\n- 横屏下选择数据源 UI 采用侧边栏新样式\r\n- Desktop 和 iOS 记忆播放器音量\r\n- 修复 iOS 闪退问题",
-          "downloadURL": "https://d2.myani.org/v4.11.0/ani-4.11.0.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.11.0/ani-4.11.0.ipa",
+          "size": 35160291,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
@@ -224,7 +225,8 @@
           "version": "4.10.0-alpha01",
           "date": "2025-04-24T10:58:06.000Z",
           "localizedDescription": "- 选集播放中将 SP 和正片分开\r\n- 优化 PC 端启动速度\r\n- 支持复制播放链接和 (安卓) 使用外部应用播放",
-          "downloadURL": "https://d2.myani.org/v4.10.0-alpha01/ani-4.10.0-alpha01.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.10.0-alpha01/ani-4.10.0-alpha01.ipa",
+          "size": 34329687,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
@@ -232,7 +234,8 @@
           "version": "4.10.0-alpha02",
           "date": "2025-04-25T09:19:22.000Z",
           "localizedDescription": "- 显示楼中楼评论\r\n- 修复一些平板上的界面问题\r\n- 修复删除缓存\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.0-alpha01...v4.10.0-alpha02",
-          "downloadURL": "https://d2.myani.org/v4.10.0-alpha02/ani-4.10.0-alpha02.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.10.0-alpha02/ani-4.10.0-alpha02.ipa",
+          "size": 34523519,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
@@ -240,7 +243,8 @@
           "version": "4.10.0-beta01",
           "date": "2025-04-28T05:37:12.000Z",
           "localizedDescription": "- BT 服务空闲时不再显示通知\r\n- BT 缓存做种达到分享率后自动停止上传（仅安卓端）\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.0-alpha02...v4.10.0-beta01",
-          "downloadURL": "https://d2.myani.org/v4.10.0-beta01/ani-4.10.0-beta01.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.10.0-beta01/ani-4.10.0-beta01.ipa",
+          "size": 34559421,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
@@ -248,7 +252,8 @@
           "version": "4.10.0-beta02",
           "date": "2025-05-01T04:49:03.000Z",
           "localizedDescription": "- 优化缓存功能\r\n- 优化 Windows 字体显示\r\n- 支持 iOS 15",
-          "downloadURL": "https://d2.myani.org/v4.10.0-beta02/ani-4.10.0-beta02.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.10.0-beta02/ani-4.10.0-beta02.ipa",
+          "size": 34534119,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
@@ -256,7 +261,8 @@
           "version": "4.11.0-alpha02",
           "date": "2025-05-14T12:03:02.000Z",
           "localizedDescription": "* Desktop 优化缓存存储位置和 BT 季度缓存解析\r\n* 修复评论的作者头像很模糊\r\n* 兼容更多 Windows 代理设置\r\n* Desktop 和 iOS 记忆播放器音量\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.1...v4.11.0-alpha02",
-          "downloadURL": "https://d2.myani.org/v4.11.0-alpha02/ani-4.11.0-alpha02.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.11.0-alpha02/ani-4.11.0-alpha02.ipa",
+          "size": 34636503,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
@@ -264,7 +270,8 @@
           "version": "4.11.0-beta01",
           "date": "2025-05-22T05:37:34.000Z",
           "localizedDescription": "* 修复桌面端播放时切换数据源可能导致 UI 卡死\r\n* 桌面端新数据源选择器样式\r\n* 搜索番剧条目时支持过滤已抛弃的条目 (#2129 by @solelper)\r\n* 播放 BT 数据源时自动创建其缓存",
-          "downloadURL": "https://d2.myani.org/v4.11.0-beta01/ani-4.11.0-beta01.ipa",
+          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.11.0-beta01/ani-4.11.0-beta01.ipa",
+          "size": 34735073,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
