@@ -50,9 +50,9 @@ const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
 })
 
 export const generateSource = async (): Promise<Source> => {
-  const updates = await fetchUpdates()
+  const { updates } = await fetchUpdates()
 
-  const allVersionResults = await Promise.all(updates.updates.map(updateToSourceVersion))
+  const allVersionResults = await Promise.all(updates.toReversed().map(updateToSourceVersion))
 
   const allVersions = allVersionResults.filter(
     (version): version is SourceVersion => version !== null
