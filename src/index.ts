@@ -7,7 +7,7 @@ const outputPath = 'generated/apps.json'
 await fs.mkdir('generated', { recursive: true })
 
 const source = await generateSource()
-const json = JSON.stringify(source, null, 2)
+const json = JSON.stringify(source)
 
 await fs.writeFile(outputPath, json, 'utf8')
 
