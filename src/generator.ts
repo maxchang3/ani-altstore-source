@@ -47,7 +47,6 @@ const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
     entitlements: [],
     privacy: {},
   },
-  patreon: {},
 })
 
 export const generateSource = async (): Promise<Source> => {

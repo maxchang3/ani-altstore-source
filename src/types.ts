@@ -58,11 +58,11 @@ export interface App {
     entitlements: string[]
     privacy: Record<string, string>
   }
-  patreon: {
-    pledge?: number
-    currency?: string
-    benefit?: string
-    tiers?: string[]
+  patreon?: {
+    pledge: number
+    currency: string
+    benefit: string
+    tiers: string[]
   }
 }
 
