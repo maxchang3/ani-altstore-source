@@ -1,13 +1,13 @@
 {
-  "name": "pkg-placeholder",
+  "name": "ani-altstore-source",
   "version": "0.0.0",
   "description": "_description_",
   "keywords": [],
-  "homepage": "https://github.com/maxchang3/pkg-placeholder#readme",
-  "bugs": "https://github.com/maxchang3/pkg-placeholder/issues",
+  "homepage": "https://github.com/maxchang3/ani-altstore-source#readme",
+  "bugs": "https://github.com/maxchang3/ani-altstore-source/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxchang3/pkg-placeholder.git"
+    "url": "git+https://github.com/maxchang3/ani-altstore-source.git"
   },
   "license": "MIT",
   "author": "maxchang3",
