@@ -68,15 +68,20 @@ export interface App {
 
 interface imageWithSize {
   imageURL: string
-  width: number
-  height: number
+  width?: number
+  height?: number
 }
 
 interface ScreenshotsClass {
-  iphone: Array<imageWithSize | string>
-  ipad: imageWithSize[]
+  iphone: (imageWithSize | string)[]
+  /**
+   * All iPad screenshots must provide an explicit `width` and `height`
+   *
+   * https://faq.altstore.io/developers/make-a-source#width-number
+   * https://faq.altstore.io/developers/make-a-source#height-number
+   */
+  ipad: Required<imageWithSize>[]
 }
-
 interface News {
   title: string
   identifier: string
