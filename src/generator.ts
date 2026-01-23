@@ -15,29 +15,29 @@ const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
   category: 'entertainment',
   screenshots: {
     iphone: [
-      'https://github.com/open-ani/animeko/blob/main/.readme/images/features/home.png?raw=true',
-      'https://github.com/open-ani/animeko/blob/main/.readme/images/features/anime-schedule.png?raw=true',
-      'https://github.com/open-ani/animeko/blob/main/.readme/images/features/subject-collection.png?raw=true',
-      'https://github.com/open-ani/animeko/blob/main/.readme/images/features/search-by-tag.png?raw=true',
-      'https://github.com/open-ani/animeko/blob/main/.readme/images/features/subject-details.png?raw=true',
-      'https://github.com/open-ani/animeko/blob/main/.readme/images/features/subject-rating.png?raw=true',
+      'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/home.png',
+      'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/anime-schedule.png',
+      'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/subject-collection.png',
+      'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/search-by-tag.png',
+      'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/subject-details.png',
+      'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/subject-rating.png',
     ],
     ipad: [
       {
         imageURL:
-          'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-home.png?raw=true',
+          'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/pc-home.png',
         width: 2966,
         height: 1576,
       },
       {
         imageURL:
-          'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-search.png?raw=true',
+          'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/pc-search.png',
         width: 2722,
         height: 1742,
       },
       {
         imageURL:
-          'https://github.com/open-ani/animeko/raw/main/.readme/images/features/pc-search-detail.png?raw=true',
+          'https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/pc-search-detail.png',
         width: 2528,
         height: 1742,
       },
