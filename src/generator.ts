@@ -18,7 +18,7 @@ const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
       'https://github.com/open-ani/animeko/blob/main/.readme/images/features/home.png?raw=true',
       'https://github.com/open-ani/animeko/blob/main/.readme/images/features/anime-schedule.png?raw=true',
       'https://github.com/open-ani/animeko/blob/main/.readme/images/features/subject-collection.png?raw=true',
-      'https://github.comopen-ani/animeko/blob/main/.readme/images/features/search-by-tag.png?raw=true',
+      'https://github.com/open-ani/animeko/blob/main/.readme/images/features/search-by-tag.png?raw=true',
       'https://github.com/open-ani/animeko/blob/main/.readme/images/features/subject-details.png?raw=true',
       'https://github.com/open-ani/animeko/blob/main/.readme/images/features/subject-rating.png?raw=true',
     ],
