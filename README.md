@@ -12,7 +12,7 @@ Import this source URL into your AltStore-compatible app:
 https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json
 ```
 
-[Online Preview](https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json)
+[[Online Preview]](https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json) (powered by [altsource-viewer](https://github.com/therealFoxster/altsource-viewer))
 
 ---
 
@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/a
 https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json
 ```
 
-[在线预览](https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json)
+[[在线预览]](https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json)（由 [altsource-viewer](https://github.com/therealFoxster/altsource-viewer) 提供）
 
 ## License
 
