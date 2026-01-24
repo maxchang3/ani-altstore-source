@@ -12,6 +12,8 @@ Import this source URL into your AltStore-compatible app:
 https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json
 ```
 
+[Online Preview](https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json)
+
 ---
 
 此项目为 [Animeko](https://myani.org) 的 AltStore 源，Animeko 是一个一站式的在线弹幕追番平台。
@@ -23,6 +25,8 @@ https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/a
 ```
 https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json
 ```
+
+[在线预览](https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json)
 
 ## License
 
