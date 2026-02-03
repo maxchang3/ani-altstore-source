@@ -145,15 +145,6 @@
           "size": 29694943,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
-        },
-        {
-          "version": "4.8.0",
-          "date": "2025-04-07T16:11:49.000Z",
-          "localizedDescription": "- 首页增加简单推荐\r\n- 增加 iOS 版\r\n- 增加 Linux 版\r\n- macOS 版支持全自动更新\r\n- 许多界面优化\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v4.7.0...v4.8.0",
-          "downloadURL": "https://d2.myani.org/v4.8.0/ani-4.8.0.ipa",
-          "size": 27171643,
-          "buildVersion": "30200",
-          "minOSVersion": "14.0"
         }
       ]
     },
@@ -197,6 +188,24 @@
         "privacy": {}
       },
       "versions": [
+        {
+          "version": "5.3.0-beta01",
+          "date": "2026-01-28T12:49:37.000Z",
+          "localizedDescription": "- 重构缓存引擎，全新缓存页面。！！更新会导致缓存失效，请提前备份！！\r\n- 固定在线源选择偏好，加速选源速度\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v5.3.0-alpha02...v5.3.0-beta01",
+          "downloadURL": "https://d2.myani.org/v5.3.0-beta01/ani-5.3.0-beta01.ipa",
+          "size": 31056122,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "5.3.0-alpha02",
+          "date": "2026-01-24T16:20:57.000Z",
+          "localizedDescription": "- 重构缓存引擎，全新缓存页面。！！更新会导致缓存失效，请提前备份！！\r\n- 固定在线源选择偏好，加速选源速度",
+          "downloadURL": "https://d2.myani.org/v5.3.0-alpha02/ani-5.3.0-alpha02.ipa",
+          "size": 31046365,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
         {
           "version": "5.3.0-alpha01",
           "date": "2026-01-16T02:07:00.000Z",
@@ -320,15 +329,6 @@
           "localizedDescription": "- 支持手动更换弹幕匹配\r\n- 优化 SP/OVA/OAD/剧场版 的检索和匹配\r\n- 优化发送弹幕速度\r\n- 优化登录\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v4.8.1...v4.9.0-alpha03\r\n\r\n> 出于一些原因，没有 alpha01 和 02",
           "downloadURL": "https://d2.myani.org/v4.9.0-alpha03/ani-4.9.0-alpha03.ipa",
           "size": 29836942,
-          "buildVersion": "30200",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "4.8.0-beta03",
-          "date": "2025-04-06T02:55:38.000Z",
-          "localizedDescription": "- iOS 支持更多功能\r\n- Linux 支持 BT by @Kasumi-Ushio\r\n- 优化在线源缓存\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v4.8.0-beta01...v4.8.0-beta03",
-          "downloadURL": "https://d2.myani.org/v4.8.0-beta03/ani-4.8.0-beta03.ipa",
-          "size": 27145161,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         }
