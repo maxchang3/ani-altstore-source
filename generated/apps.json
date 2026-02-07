@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "5.3.0",
+          "date": "2026-02-07T12:16:18.000Z",
+          "localizedDescription": "- 重构缓存引擎，全新缓存页面。！！更新会导致缓存失效，请提前备份！！\r\n- 新增画面拉伸选项\r\n- 新增自动缓存弹幕\r\n- 新增弹幕按源调整时间偏差\r\n- 固定在线源选择偏好，加速选源速度\r\n- 支持搜索 OVA 等特殊剧集",
+          "downloadURL": "https://d2.myani.org/v5.3.0/ani-5.3.0.ipa",
+          "size": 31048826,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.2.0",
           "date": "2025-11-08T02:52:27.000Z",
           "localizedDescription": "- 支持自动跳过 OP 和 ED (部分新番)\r\n- 支持离线使用 (断网后播放缓存)\r\n- 增加弹幕时间偏移设置",
@@ -134,15 +143,6 @@
           "localizedDescription": "- 修复 Bangumi 收藏列表的刷新 (请务必更新此版本)\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.8.1...v4.8.2",
           "downloadURL": "https://d2.myani.org/v4.8.2/ani-4.8.2.ipa",
           "size": 29697057,
-          "buildVersion": "30200",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "4.8.1",
-          "date": "2025-04-13T15:47:22.000Z",
-          "localizedDescription": "- 优化登录\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.8.0...v4.8.1",
-          "downloadURL": "https://d2.myani.org/v4.8.1/ani-4.8.1.ipa",
-          "size": 29694943,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         }
