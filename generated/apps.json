@@ -48,11 +48,11 @@
       },
       "versions": [
         {
-          "version": "5.3.0",
-          "date": "2026-02-07T12:16:18.000Z",
+          "version": "5.3.1",
+          "date": "2026-02-07T16:43:26.000Z",
           "localizedDescription": "- 重构缓存引擎，全新缓存页面。！！更新会导致缓存失效，请提前备份！！\r\n- 新增画面拉伸选项\r\n- 新增自动缓存弹幕\r\n- 新增弹幕按源调整时间偏差\r\n- 固定在线源选择偏好，加速选源速度\r\n- 支持搜索 OVA 等特殊剧集",
-          "downloadURL": "https://d2.myani.org/v5.3.0/ani-5.3.0.ipa",
-          "size": 31048826,
+          "downloadURL": "https://d2.myani.org/v5.3.1/ani-5.3.1.ipa",
+          "size": 31057279,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
