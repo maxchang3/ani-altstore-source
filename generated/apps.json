@@ -279,15 +279,6 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "4.11.0-alpha02",
-          "date": "2025-05-14T12:03:02.000Z",
-          "localizedDescription": "* Desktop 优化缓存存储位置和 BT 季度缓存解析\r\n* 修复评论的作者头像很模糊\r\n* 兼容更多 Windows 代理设置\r\n* Desktop 和 iOS 记忆播放器音量\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.1...v4.11.0-alpha02",
-          "downloadURL": "https://ghfast.top/https://github.com/open-ani/ani/releases/download/v4.11.0-alpha02/ani-4.11.0-alpha02.ipa",
-          "size": 34636503,
-          "buildVersion": "30200",
-          "minOSVersion": "14.0"
-        },
-        {
           "version": "4.10.0-beta02",
           "date": "2025-05-01T04:49:03.000Z",
           "localizedDescription": "- 优化缓存功能\r\n- 优化 Windows 字体显示\r\n- 支持 iOS 15",
