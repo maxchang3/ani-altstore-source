@@ -93,6 +93,33 @@
           "minOSVersion": "14.0"
         },
         {
+          "version": "4.11.0",
+          "date": "2025-05-28T08:54:02.000Z",
+          "localizedDescription": "优化播放体验:\r\n\r\n- 修复 Desktop 切换数据源会导致 UI 卡死的问题\r\n- 横屏下选择数据源 UI 采用侧边栏新样式\r\n- Desktop 和 iOS 记忆播放器音量\r\n- 修复 iOS 闪退问题",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.11.0/ani-4.11.0.ipa",
+          "size": 35160291,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.10.1",
+          "date": "2025-05-04T10:31:29.000Z",
+          "localizedDescription": "适配新 Bangumi 接口，修复某些番加载错误的问题\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.0...v4.10.1",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.10.1/ani-4.10.1.ipa",
+          "size": 34531759,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.10.0",
+          "date": "2025-05-03T17:40:18.000Z",
+          "localizedDescription": "优化播放和缓存体验: \r\n\r\n- 选集播放中将 SP 和正片分开\r\n- BT 服务空闲时不再显示通知\r\n- 支持复制播放链接和 (安卓) 使用外部应用播放",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.10.0/ani-4.10.0.ipa",
+          "size": 34533795,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "4.9.1",
           "date": "2025-04-26T15:32:35.000Z",
           "localizedDescription": "- 修复删除缓存\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.9.0...v4.9.1",
@@ -239,6 +266,60 @@
           "localizedDescription": "Animeko 5.0 测试版发布\r\n\r\n## 新账号系统\r\n\r\nAnimeko 5.0 将使用新的账号系统。现在通过 Animeko 账号即可收藏番剧条目并跨平台同步，无需强制注册 Bangumi 账号。\r\nBangumi 账号变更为“第三方账号”，与你的 Animeko 账号绑定。绑定成功后即可支持将 Animeko 账号的收藏数据与 Bangumi 账号的收藏数据进行双向同步。\r\n\r\n对于从 4.x 升级并通过登录 Bangumi 账号的用户，升级后需要重新通过 Bangumi oAuth 授权登录来继承旧版账号发送的弹幕等数据，另外需要绑定一个邮箱来支持邮箱登录；新用户可以通过邮箱或者 Bangumi oAuth 授权登录两种方式注册新的 Animeko 账号。\r\n\r\n## 其他变更\r\n\r\n* 优化播放页的评论和弹幕设置 UI\r\n* 修复进入缓存页可能无法显示缓存列表\r\n* 禁用 VLC 可能导致冲突的内置键盘快捷键 (#2247 by @Koileo)\r\n* 修复搜索页过滤可能会出现空位 (#2299 by @GeneralK1ng)\r\n* 修复数据源播放失败后会再次选择失败的数据源\r\n* 修复 Android 端无法使用第三方软件包安装程序安装更新 (#2317 by @aaa1115910)\r\n* 修复数据源手动编辑查询请求时无法舍弃编辑\r\n* 修复条目详情页剧集列表长按设置已看功能失效\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.11.1...v5.0.0-alpha02",
           "downloadURL": "https://d2.myani.org/v5.0.0-alpha02/ani-5.0.0-alpha02.ipa",
           "size": 35402730,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.11.0-beta01",
+          "date": "2025-05-22T05:37:34.000Z",
+          "localizedDescription": "* 修复桌面端播放时切换数据源可能导致 UI 卡死\r\n* 桌面端新数据源选择器样式\r\n* 搜索番剧条目时支持过滤已抛弃的条目 (#2129 by @solelper)\r\n* 播放 BT 数据源时自动创建其缓存",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.11.0-beta01/ani-4.11.0-beta01.ipa",
+          "size": 34735073,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.11.0-alpha02",
+          "date": "2025-05-14T12:03:02.000Z",
+          "localizedDescription": "* Desktop 优化缓存存储位置和 BT 季度缓存解析\r\n* 修复评论的作者头像很模糊\r\n* 兼容更多 Windows 代理设置\r\n* Desktop 和 iOS 记忆播放器音量\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.1...v4.11.0-alpha02",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.11.0-alpha02/ani-4.11.0-alpha02.ipa",
+          "size": 34636503,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.10.0-beta02",
+          "date": "2025-05-01T04:49:03.000Z",
+          "localizedDescription": "- 优化缓存功能\r\n- 优化 Windows 字体显示\r\n- 支持 iOS 15",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.10.0-beta02/ani-4.10.0-beta02.ipa",
+          "size": 34534119,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.10.0-beta01",
+          "date": "2025-04-28T05:37:12.000Z",
+          "localizedDescription": "- BT 服务空闲时不再显示通知\r\n- BT 缓存做种达到分享率后自动停止上传（仅安卓端）\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.0-alpha02...v4.10.0-beta01",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.10.0-beta01/ani-4.10.0-beta01.ipa",
+          "size": 34559421,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.10.0-alpha02",
+          "date": "2025-04-25T09:19:22.000Z",
+          "localizedDescription": "- 显示楼中楼评论\r\n- 修复一些平板上的界面问题\r\n- 修复删除缓存\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.10.0-alpha01...v4.10.0-alpha02",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.10.0-alpha02/ani-4.10.0-alpha02.ipa",
+          "size": 34523519,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.10.0-alpha01",
+          "date": "2025-04-24T10:58:06.000Z",
+          "localizedDescription": "- 选集播放中将 SP 和正片分开\r\n- 优化 PC 端启动速度\r\n- 支持复制播放链接和 (安卓) 使用外部应用播放",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.10.0-alpha01/ani-4.10.0-alpha01.ipa",
+          "size": 34329687,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         },
