@@ -57,13 +57,16 @@ export const getFileSizeFromHEAD = async (url: string): Promise<FileSizeResult> 
 
 export const updateToSourceVersion = async (update: Update) => {
   for (const url of update.downloadUrlAlternatives) {
-    const result = await getFileSizeFromHEAD(url)
+    const normalizedURL = url.startsWith('https://ghfast.top/')
+      ? url.replace('https://ghfast.top/', '')
+      : url
+    const result = await getFileSizeFromHEAD(normalizedURL)
     if (result.size === null) continue
     return {
       version: update.version,
       date: timestampToISO(update.publishTime),
       localizedDescription: update.description,
-      downloadURL: url,
+      downloadURL: normalizedURL,
       size: result.size,
       buildVersion: DEFAULT_BUILD_VERSION,
       minOSVersion: DEFAULT_MIN_OS_VERSION,
