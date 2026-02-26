@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "5.3.2",
+          "date": "2026-02-26T06:02:14.000Z",
+          "localizedDescription": "- 修复搜索接口的问题",
+          "downloadURL": "https://d2.myani.org/v5.3.2/ani-5.3.2.ipa",
+          "size": 31051074,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.3.1",
           "date": "2026-02-07T16:43:26.000Z",
           "localizedDescription": "- 重构缓存引擎，全新缓存页面。！！更新会导致缓存失效，请提前备份！！\r\n- 新增画面拉伸选项\r\n- 新增自动缓存弹幕\r\n- 新增弹幕按源调整时间偏差\r\n- 固定在线源选择偏好，加速选源速度\r\n- 支持搜索 OVA 等特殊剧集",
@@ -320,15 +329,6 @@
           "localizedDescription": "- 选集播放中将 SP 和正片分开\r\n- 优化 PC 端启动速度\r\n- 支持复制播放链接和 (安卓) 使用外部应用播放",
           "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.10.0-alpha01/ani-4.10.0-alpha01.ipa",
           "size": 34329687,
-          "buildVersion": "30200",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "4.9.0-alpha03",
-          "date": "2025-04-13T15:48:53.000Z",
-          "localizedDescription": "- 支持手动更换弹幕匹配\r\n- 优化 SP/OVA/OAD/剧场版 的检索和匹配\r\n- 优化发送弹幕速度\r\n- 优化登录\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v4.8.1...v4.9.0-alpha03\r\n\r\n> 出于一些原因，没有 alpha01 和 02",
-          "downloadURL": "https://d2.myani.org/v4.9.0-alpha03/ani-4.9.0-alpha03.ipa",
-          "size": 29836942,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
         }
