@@ -145,15 +145,6 @@
           "size": 33948595,
           "buildVersion": "30200",
           "minOSVersion": "14.0"
-        },
-        {
-          "version": "4.8.2",
-          "date": "2025-04-16T21:55:15.000Z",
-          "localizedDescription": "- 修复 Bangumi 收藏列表的刷新 (请务必更新此版本)\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v4.8.1...v4.8.2",
-          "downloadURL": "https://d2.myani.org/v4.8.2/ani-4.8.2.ipa",
-          "size": 29697057,
-          "buildVersion": "30200",
-          "minOSVersion": "14.0"
         }
       ]
     },
@@ -197,6 +188,15 @@
         "privacy": {}
       },
       "versions": [
+        {
+          "version": "5.4.0-beta02",
+          "date": "2026-03-18T04:25:52.000Z",
+          "localizedDescription": "- 修复缓存的各种问题\r\n- 修复 iOS 无法播放缓存的问题\r\n- 支持手动通过数据源的搜索验证\r\n- 支持发评论到 ani 服务器",
+          "downloadURL": "https://d2.myani.org/v5.4.0-beta02/ani-5.4.0-beta02.ipa",
+          "size": 35393765,
+          "buildVersion": "30200",
+          "minOSVersion": "14.0"
+        },
         {
           "version": "5.3.0-beta01",
           "date": "2026-01-28T12:49:37.000Z",
