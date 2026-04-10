@@ -53,7 +53,7 @@
           "localizedDescription": "- 修复搜索页无法搜索和闪退的问题",
           "downloadURL": "https://d2.myani.org/v5.4.1/ani-5.4.1.ipa",
           "size": 35356124,
-          "buildVersion": "30200",
+          "buildVersion": "50406",
           "minOSVersion": "14.0"
         },
         {
@@ -62,7 +62,7 @@
           "localizedDescription": "- 支持发送评论\r\n- 修复 iOS 缓存无法播放\r\n- 修复 Web 缓存视频元信息错误\r\n- 设置里显示数据源 Tier\r\n- 修复缓存页闪退，缓存消失",
           "downloadURL": "https://d2.myani.org/v5.4.0/ani-5.4.0.ipa",
           "size": 35415105,
-          "buildVersion": "30200",
+          "buildVersion": "50406",
           "minOSVersion": "14.0"
         }
       ]
@@ -113,7 +113,7 @@
           "localizedDescription": "- 修复缓存页面闪退\r\n- 修复发送剧集评论闪退",
           "downloadURL": "https://d2.myani.org/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
           "size": 35418371,
-          "buildVersion": "30200",
+          "buildVersion": "50406",
           "minOSVersion": "14.0"
         },
         {
@@ -122,7 +122,7 @@
           "localizedDescription": "- 修复 HLS 缓存合并失败\r\n- 缓存错误增加提示",
           "downloadURL": "https://d2.myani.org/v5.4.0-beta04/ani-5.4.0-beta04.ipa",
           "size": 35411429,
-          "buildVersion": "30200",
+          "buildVersion": "50406",
           "minOSVersion": "14.0"
         },
         {
@@ -131,7 +131,7 @@
           "localizedDescription": "- 修复缓存消失问题\r\n- 修复缓存页闪退问题",
           "downloadURL": "https://d2.myani.org/v5.4.0-beta03/ani-5.4.0-beta03.ipa",
           "size": 35401953,
-          "buildVersion": "30200",
+          "buildVersion": "50406",
           "minOSVersion": "14.0"
         },
         {
