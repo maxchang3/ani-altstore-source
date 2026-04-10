@@ -17,6 +17,14 @@ https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/a
 
 [[在线预览]](https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json)（由 [altsource-viewer](https://github.com/therealFoxster/altsource-viewer) 提供）
 
+
+> [!NOTE]
+>
+> 由于 bundle id  修改，`apps.json` 仅包含 5.4.x 及以上版本的应用版本。
+>
+> 如果你需要安装此前的版本，请使用 `apps-old.json`
+> 
+
 ---
 
 This is a custom [AltStore](https://altstore.io/) source for [Animeko](https://myani.org), an all-in-one online danmaku anime platform. 
@@ -32,6 +40,11 @@ https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/a
 ```
 
 [[Online Preview]](https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json) (powered by [altsource-viewer](https://github.com/therealFoxster/altsource-viewer))
+
+> [!NOTE]
+> Due to bundle id changes, `apps.json` only contains app versions 5.4.x and above.
+> 
+> If you need to install earlier versions, please use `apps-old.json`
 
 ---
 
