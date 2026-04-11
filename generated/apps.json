@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "5.4.2",
+          "date": "2026-04-11T04:49:10.000Z",
+          "localizedDescription": "- 修复播放器暂停后可能无法继续播放",
+          "downloadURL": "https://d2.myani.org/v5.4.2/ani-5.4.2.ipa",
+          "size": 35355797,
+          "buildVersion": "50406",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.4.1",
           "date": "2026-04-10T09:16:09.000Z",
           "localizedDescription": "- 修复搜索页无法搜索和闪退的问题",
