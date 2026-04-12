@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "5.4.3",
+          "date": "2026-04-12T02:42:30.000Z",
+          "localizedDescription": "- 修复剧集自动切换错误",
+          "downloadURL": "https://d2.myani.org/v5.4.3/ani-5.4.3.ipa",
+          "size": 35360753,
+          "buildVersion": "50406",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.4.2",
           "date": "2026-04-11T04:49:10.000Z",
           "localizedDescription": "- 修复播放器暂停后可能无法继续播放",
