@@ -1,3 +1,4 @@
+import { Listr } from 'listr2'
 import { coerce, gte } from 'semver'
 import { fetchUpdates } from './api'
 import type { App, Source, SourceVersion } from './types'
@@ -59,7 +60,28 @@ const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
 export const generateSource = async (): Promise<Source> => {
   const { updates } = await fetchUpdates()
 
-  const allVersionResults = await Promise.all(updates.toReversed().map(updateToSourceVersion))
+  // 筛选出满足最小版本要求的版本 (>= 5.4.x)
+  const orderedUpdates = updates
+    .filter((update) => meetsMinimumVersion(update.version))
+    .toReversed()
+  const allVersionResults: Array<SourceVersion | null> = new Array(orderedUpdates.length).fill(null)
+
+  const tasks = new Listr(
+    orderedUpdates.map((update, index) => ({
+      title: `处理 ${update.version}`,
+      task: async () => {
+        const sourceVersion = await updateToSourceVersion(update)
+
+        allVersionResults[index] = sourceVersion
+      },
+    })),
+    {
+      concurrent: 6,
+      exitOnError: false,
+    }
+  )
+
+  await tasks.run()
 
   const allVersions = allVersionResults.filter(
     (version): version is SourceVersion => version !== null
@@ -70,13 +92,10 @@ export const generateSource = async (): Promise<Source> => {
     console.warn(`[warn] 过滤掉了 ${filteredCount} 个无法下载的版本`)
   }
 
-  // 筛选出满足最小版本要求的版本 (>= 5.4.x)
-  const filteredVersions = allVersions.filter((version) => meetsMinimumVersion(version.version))
-
   const stableVersions: SourceVersion[] = []
   const betaVersions: SourceVersion[] = []
 
-  for (const version of filteredVersions) {
+  for (const version of allVersions) {
     if (isBetaVersion(version.version)) {
       betaVersions.push(version)
     } else {

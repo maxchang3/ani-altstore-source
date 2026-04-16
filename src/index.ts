@@ -12,6 +12,10 @@ console.log(`文件已保存到: ${outputPath}`)
 console.log(`包含 ${source.apps[0].versions.length} 个版本`)
 
 const latestVersion = source.apps[0].versions[0]
-console.log(`\n最新版本: ${latestVersion.version}`)
-console.log(`发布时间: ${latestVersion.date}`)
-console.log(`下载链接: ${latestVersion.downloadURL}`)
+if (!latestVersion) {
+  console.log('\n未生成可用版本，请检查上面的警告日志。')
+} else {
+  console.log(`\n最新版本: ${latestVersion.version}`)
+  console.log(`发布时间: ${latestVersion.date}`)
+  console.log(`下载链接: ${latestVersion.downloadURL}`)
+}
