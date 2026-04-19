@@ -51,7 +51,7 @@
           "version": "5.4.3",
           "date": "2026-04-12T02:42:30.000Z",
           "localizedDescription": "- 修复剧集自动切换错误",
-          "downloadURL": "https://d2.myani.org/v5.4.3/ani-5.4.3.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.3/ani-5.4.3.ipa",
           "size": 35360753,
           "buildVersion": "50430",
           "minOSVersion": "14.0"
@@ -78,7 +78,7 @@
           "version": "5.4.0",
           "date": "2026-04-06T12:31:28.000Z",
           "localizedDescription": "- 支持发送评论\r\n- 修复 iOS 缓存无法播放\r\n- 修复 Web 缓存视频元信息错误\r\n- 设置里显示数据源 Tier\r\n- 修复缓存页闪退，缓存消失",
-          "downloadURL": "https://d2.myani.org/v5.4.0/ani-5.4.0.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0/ani-5.4.0.ipa",
           "size": 35415105,
           "buildVersion": "50400",
           "minOSVersion": "14.0"
@@ -147,7 +147,7 @@
           "version": "5.4.0-beta04",
           "date": "2026-03-25T02:36:14.000Z",
           "localizedDescription": "- 修复 HLS 缓存合并失败\r\n- 缓存错误增加提示",
-          "downloadURL": "https://d2.myani.org/v5.4.0-beta04/ani-5.4.0-beta04.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta04/ani-5.4.0-beta04.ipa",
           "size": 35411429,
           "buildVersion": "50408",
           "minOSVersion": "14.0"
@@ -156,7 +156,7 @@
           "version": "5.4.0-beta03",
           "date": "2026-03-24T03:22:49.000Z",
           "localizedDescription": "- 修复缓存消失问题\r\n- 修复缓存页闪退问题",
-          "downloadURL": "https://d2.myani.org/v5.4.0-beta03/ani-5.4.0-beta03.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta03/ani-5.4.0-beta03.ipa",
           "size": 35401953,
           "buildVersion": "50407",
           "minOSVersion": "14.0"
@@ -165,7 +165,7 @@
           "version": "5.4.0-beta02",
           "date": "2026-03-18T04:25:52.000Z",
           "localizedDescription": "- 修复缓存的各种问题\r\n- 修复 iOS 无法播放缓存的问题\r\n- 支持手动通过数据源的搜索验证\r\n- 支持发评论到 ani 服务器",
-          "downloadURL": "https://d2.myani.org/v5.4.0-beta02/ani-5.4.0-beta02.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta02/ani-5.4.0-beta02.ipa",
           "size": 35393765,
           "buildVersion": "50406",
           "minOSVersion": "14.0"
