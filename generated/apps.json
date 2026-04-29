@@ -69,7 +69,7 @@
           "version": "5.4.1",
           "date": "2026-04-10T09:16:09.000Z",
           "localizedDescription": "- 修复搜索页无法搜索和闪退的问题",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.1/ani-5.4.1.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.1/ani-5.4.1.ipa",
           "size": 35356124,
           "buildVersion": "50410",
           "minOSVersion": "14.0"
