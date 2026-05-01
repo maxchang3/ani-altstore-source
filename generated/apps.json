@@ -147,7 +147,7 @@
           "version": "5.4.0-beta04",
           "date": "2026-03-25T02:36:14.000Z",
           "localizedDescription": "- 修复 HLS 缓存合并失败\r\n- 缓存错误增加提示",
-          "downloadURL": "https://d2.myani.org/v5.4.0-beta04/ani-5.4.0-beta04.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta04/ani-5.4.0-beta04.ipa",
           "size": 35411429,
           "buildVersion": "50408",
           "minOSVersion": "14.0"
