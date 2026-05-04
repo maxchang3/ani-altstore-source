@@ -60,7 +60,7 @@
           "version": "5.4.2",
           "date": "2026-04-11T04:49:10.000Z",
           "localizedDescription": "- 修复播放器暂停后可能无法继续播放",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.2/ani-5.4.2.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.2/ani-5.4.2.ipa",
           "size": 35355797,
           "buildVersion": "50420",
           "minOSVersion": "14.0"
@@ -69,7 +69,7 @@
           "version": "5.4.1",
           "date": "2026-04-10T09:16:09.000Z",
           "localizedDescription": "- 修复搜索页无法搜索和闪退的问题",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.1/ani-5.4.1.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.1/ani-5.4.1.ipa",
           "size": 35356124,
           "buildVersion": "50410",
           "minOSVersion": "14.0"
@@ -129,7 +129,7 @@
           "version": "5.5.0-alpha02",
           "date": "2026-04-15T05:18:52.000Z",
           "localizedDescription": "- 新增 Linux 支持通过 D-Bus 和 systemd-inhibit 防屏幕休眠\r\n- 修复 Android 应用语言选择不生效\r\n- 修复 iOS 发评论闪退\r\n- 番剧搜索结果支持按 air date 排序",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-alpha02/ani-5.5.0-alpha02.ipa",
+          "downloadURL": "https://d2.myani.org/v5.5.0-alpha02/ani-5.5.0-alpha02.ipa",
           "size": 29708860,
           "buildVersion": "50501",
           "minOSVersion": "14.0"
@@ -138,7 +138,7 @@
           "version": "5.4.0-beta05",
           "date": "2026-03-25T07:25:53.000Z",
           "localizedDescription": "- 修复缓存页面闪退\r\n- 修复发送剧集评论闪退",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
           "size": 35418371,
           "buildVersion": "50409",
           "minOSVersion": "14.0"
@@ -147,7 +147,7 @@
           "version": "5.4.0-beta04",
           "date": "2026-03-25T02:36:14.000Z",
           "localizedDescription": "- 修复 HLS 缓存合并失败\r\n- 缓存错误增加提示",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta04/ani-5.4.0-beta04.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.0-beta04/ani-5.4.0-beta04.ipa",
           "size": 35411429,
           "buildVersion": "50408",
           "minOSVersion": "14.0"
@@ -165,7 +165,7 @@
           "version": "5.4.0-beta02",
           "date": "2026-03-18T04:25:52.000Z",
           "localizedDescription": "- 修复缓存的各种问题\r\n- 修复 iOS 无法播放缓存的问题\r\n- 支持手动通过数据源的搜索验证\r\n- 支持发评论到 ani 服务器",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta02/ani-5.4.0-beta02.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.0-beta02/ani-5.4.0-beta02.ipa",
           "size": 35393765,
           "buildVersion": "50406",
           "minOSVersion": "14.0"
