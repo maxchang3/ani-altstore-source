@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "5.4.4",
+          "date": "2026-05-13T17:21:33.000Z",
+          "localizedDescription": "- 优化手机播放页界面\r\n- 手机上支持查看详细弹幕列表\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v5.4.3...v5.4.4",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.4/ani-5.4.4.ipa",
+          "size": 35357234,
+          "buildVersion": "50440",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.4.3",
           "date": "2026-04-12T02:42:30.000Z",
           "localizedDescription": "- 修复剧集自动切换错误",
@@ -69,7 +78,7 @@
           "version": "5.4.1",
           "date": "2026-04-10T09:16:09.000Z",
           "localizedDescription": "- 修复搜索页无法搜索和闪退的问题",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.1/ani-5.4.1.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.1/ani-5.4.1.ipa",
           "size": 35356124,
           "buildVersion": "50410",
           "minOSVersion": "14.0"
@@ -129,7 +138,7 @@
           "version": "5.5.0-beta01",
           "date": "2026-05-13T09:27:25.000Z",
           "localizedDescription": "- 优化手机播放页界面\r\n- 手机上支持查看详细弹幕列表\r\n- 增加弹幕正则过滤规则导入导出并加入设置备份 by @Calv1nJ in https://github.com/open-ani/animeko/pull/3007",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-beta01/ani-5.5.0-beta01.ipa",
+          "downloadURL": "https://d2.myani.org/v5.5.0-beta01/ani-5.5.0-beta01.ipa",
           "size": 29896178,
           "buildVersion": "50507",
           "minOSVersion": "14.0"
@@ -156,7 +165,7 @@
           "version": "5.4.0-beta05",
           "date": "2026-03-25T07:25:53.000Z",
           "localizedDescription": "- 修复缓存页面闪退\r\n- 修复发送剧集评论闪退",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
           "size": 35418371,
           "buildVersion": "50409",
           "minOSVersion": "14.0"
