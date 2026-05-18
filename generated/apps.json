@@ -69,7 +69,7 @@
           "version": "5.4.2",
           "date": "2026-04-11T04:49:10.000Z",
           "localizedDescription": "- 修复播放器暂停后可能无法继续播放",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.2/ani-5.4.2.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.2/ani-5.4.2.ipa",
           "size": 35355797,
           "buildVersion": "50420",
           "minOSVersion": "14.0"
@@ -156,7 +156,7 @@
           "version": "5.5.0-alpha02",
           "date": "2026-04-15T05:18:52.000Z",
           "localizedDescription": "- 新增 Linux 支持通过 D-Bus 和 systemd-inhibit 防屏幕休眠\r\n- 修复 Android 应用语言选择不生效\r\n- 修复 iOS 发评论闪退\r\n- 番剧搜索结果支持按 air date 排序",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-alpha02/ani-5.5.0-alpha02.ipa",
+          "downloadURL": "https://d2.myani.org/v5.5.0-alpha02/ani-5.5.0-alpha02.ipa",
           "size": 29708860,
           "buildVersion": "50501",
           "minOSVersion": "14.0"
