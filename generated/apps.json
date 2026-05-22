@@ -51,7 +51,7 @@
           "version": "5.4.4",
           "date": "2026-05-13T17:21:33.000Z",
           "localizedDescription": "- 优化手机播放页界面\r\n- 手机上支持查看详细弹幕列表\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v5.4.3...v5.4.4",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.4/ani-5.4.4.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.4/ani-5.4.4.ipa",
           "size": 35357234,
           "buildVersion": "50440",
           "minOSVersion": "14.0"
@@ -60,7 +60,7 @@
           "version": "5.4.3",
           "date": "2026-04-12T02:42:30.000Z",
           "localizedDescription": "- 修复剧集自动切换错误",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.3/ani-5.4.3.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.3/ani-5.4.3.ipa",
           "size": 35360753,
           "buildVersion": "50430",
           "minOSVersion": "14.0"
@@ -69,7 +69,7 @@
           "version": "5.4.2",
           "date": "2026-04-11T04:49:10.000Z",
           "localizedDescription": "- 修复播放器暂停后可能无法继续播放",
-          "downloadURL": "https://d2.myani.org/v5.4.2/ani-5.4.2.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.2/ani-5.4.2.ipa",
           "size": 35355797,
           "buildVersion": "50420",
           "minOSVersion": "14.0"
@@ -147,7 +147,7 @@
           "version": "5.5.0-alpha03",
           "date": "2026-05-10T10:42:57.000Z",
           "localizedDescription": "- 支持通过 PikPak 加速 BT 资源播放 (#2978 by @NihilDigit)\r\n- Desktop 支持最小化到托盘 (#2934 by @Mystery406)\r\n- 修复一些 i18n 问题 (#2944 by @wellorbetter)\r\n- 修复 Desktop 切换剧集卡死，切换错误的问题\r\n- 修复 Desktop 无法播放 BT 的问题\r\n- 修复 Desktop 剪切板无效 (#3004 by @Restia-Ashbell)",
-          "downloadURL": "https://d2.myani.org/v5.5.0-alpha03/ani-5.5.0-alpha03.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-alpha03/ani-5.5.0-alpha03.ipa",
           "size": 29886394,
           "buildVersion": "50503",
           "minOSVersion": "14.0"
