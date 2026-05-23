@@ -60,7 +60,7 @@
           "version": "5.4.3",
           "date": "2026-04-12T02:42:30.000Z",
           "localizedDescription": "- 修复剧集自动切换错误",
-          "downloadURL": "https://d2.myani.org/v5.4.3/ani-5.4.3.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.3/ani-5.4.3.ipa",
           "size": 35360753,
           "buildVersion": "50430",
           "minOSVersion": "14.0"
