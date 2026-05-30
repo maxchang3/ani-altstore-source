@@ -78,7 +78,7 @@
           "version": "5.4.4",
           "date": "2026-05-13T17:21:33.000Z",
           "localizedDescription": "- 优化手机播放页界面\r\n- 手机上支持查看详细弹幕列表\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v5.4.3...v5.4.4",
-          "downloadURL": "https://d2.myani.org/v5.4.4/ani-5.4.4.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.4/ani-5.4.4.ipa",
           "size": 35357234,
           "buildVersion": "50440",
           "minOSVersion": "14.0"
@@ -165,7 +165,7 @@
           "version": "5.6.0-alpha01",
           "date": "2026-05-25T09:12:18.000Z",
           "localizedDescription": "- 新增剧集评论表情回应，并优化回应区域的显示体验\r\n- 增强网页数据源的验证码检测能力\r\n- 尽快释放 CEF 资源, 减少播放时的占用",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.6.0-alpha01/ani-5.6.0-alpha01.ipa",
+          "downloadURL": "https://d2.myani.org/v5.6.0-alpha01/ani-5.6.0-alpha01.ipa",
           "size": 30360099,
           "buildVersion": "50601",
           "minOSVersion": "14.0"
@@ -174,7 +174,7 @@
           "version": "5.5.0-beta02",
           "date": "2026-05-23T02:31:19.000Z",
           "localizedDescription": "- 弹幕匹配优先使用 Dandanplay 的 Bangumi ID 映射，提升条目识别和弹幕匹配准确性\r\n- Bangumi 登录过期时会提示重新登录，避免同步或相关操作失败时不清楚原因",
-          "downloadURL": "https://d2.myani.org/v5.5.0-beta02/ani-5.5.0-beta02.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-beta02/ani-5.5.0-beta02.ipa",
           "size": 29923308,
           "buildVersion": "50508",
           "minOSVersion": "14.0"
@@ -183,7 +183,7 @@
           "version": "5.5.0-beta01",
           "date": "2026-05-13T09:27:25.000Z",
           "localizedDescription": "- 优化手机播放页界面\r\n- 手机上支持查看详细弹幕列表\r\n- 增加弹幕正则过滤规则导入导出并加入设置备份 by @Calv1nJ in https://github.com/open-ani/animeko/pull/3007",
-          "downloadURL": "https://d2.myani.org/v5.5.0-beta01/ani-5.5.0-beta01.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-beta01/ani-5.5.0-beta01.ipa",
           "size": 29896178,
           "buildVersion": "50507",
           "minOSVersion": "14.0"
