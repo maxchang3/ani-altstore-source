@@ -78,7 +78,7 @@
           "version": "5.4.4",
           "date": "2026-05-13T17:21:33.000Z",
           "localizedDescription": "- 优化手机播放页界面\r\n- 手机上支持查看详细弹幕列表\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v5.4.3...v5.4.4",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.4/ani-5.4.4.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.4/ani-5.4.4.ipa",
           "size": 35357234,
           "buildVersion": "50440",
           "minOSVersion": "14.0"
@@ -114,7 +114,7 @@
           "version": "5.4.0",
           "date": "2026-04-06T12:31:28.000Z",
           "localizedDescription": "- 支持发送评论\r\n- 修复 iOS 缓存无法播放\r\n- 修复 Web 缓存视频元信息错误\r\n- 设置里显示数据源 Tier\r\n- 修复缓存页闪退，缓存消失",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0/ani-5.4.0.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.0/ani-5.4.0.ipa",
           "size": 35415105,
           "buildVersion": "50400",
           "minOSVersion": "14.0"
@@ -192,7 +192,7 @@
           "version": "5.5.0-alpha03",
           "date": "2026-05-10T10:42:57.000Z",
           "localizedDescription": "- 支持通过 PikPak 加速 BT 资源播放 (#2978 by @NihilDigit)\r\n- Desktop 支持最小化到托盘 (#2934 by @Mystery406)\r\n- 修复一些 i18n 问题 (#2944 by @wellorbetter)\r\n- 修复 Desktop 切换剧集卡死，切换错误的问题\r\n- 修复 Desktop 无法播放 BT 的问题\r\n- 修复 Desktop 剪切板无效 (#3004 by @Restia-Ashbell)",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-alpha03/ani-5.5.0-alpha03.ipa",
+          "downloadURL": "https://d2.myani.org/v5.5.0-alpha03/ani-5.5.0-alpha03.ipa",
           "size": 29886394,
           "buildVersion": "50503",
           "minOSVersion": "14.0"
@@ -210,7 +210,7 @@
           "version": "5.4.0-beta05",
           "date": "2026-03-25T07:25:53.000Z",
           "localizedDescription": "- 修复缓存页面闪退\r\n- 修复发送剧集评论闪退",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
           "size": 35418371,
           "buildVersion": "50409",
           "minOSVersion": "14.0"
