@@ -201,7 +201,7 @@
           "version": "5.5.0-alpha02",
           "date": "2026-04-15T05:18:52.000Z",
           "localizedDescription": "- 新增 Linux 支持通过 D-Bus 和 systemd-inhibit 防屏幕休眠\r\n- 修复 Android 应用语言选择不生效\r\n- 修复 iOS 发评论闪退\r\n- 番剧搜索结果支持按 air date 排序",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-alpha02/ani-5.5.0-alpha02.ipa",
+          "downloadURL": "https://d2.myani.org/v5.5.0-alpha02/ani-5.5.0-alpha02.ipa",
           "size": 29708860,
           "buildVersion": "50501",
           "minOSVersion": "14.0"
@@ -228,7 +228,7 @@
           "version": "5.4.0-beta03",
           "date": "2026-03-24T03:22:49.000Z",
           "localizedDescription": "- 修复缓存消失问题\r\n- 修复缓存页闪退问题",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta03/ani-5.4.0-beta03.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.0-beta03/ani-5.4.0-beta03.ipa",
           "size": 35401953,
           "buildVersion": "50407",
           "minOSVersion": "14.0"
