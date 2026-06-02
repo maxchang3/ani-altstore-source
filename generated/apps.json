@@ -96,7 +96,7 @@
           "version": "5.4.2",
           "date": "2026-04-11T04:49:10.000Z",
           "localizedDescription": "- 修复播放器暂停后可能无法继续播放",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.2/ani-5.4.2.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.2/ani-5.4.2.ipa",
           "size": 35355797,
           "buildVersion": "50420",
           "minOSVersion": "14.0"
@@ -114,7 +114,7 @@
           "version": "5.4.0",
           "date": "2026-04-06T12:31:28.000Z",
           "localizedDescription": "- 支持发送评论\r\n- 修复 iOS 缓存无法播放\r\n- 修复 Web 缓存视频元信息错误\r\n- 设置里显示数据源 Tier\r\n- 修复缓存页闪退，缓存消失",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0/ani-5.4.0.ipa",
+          "downloadURL": "https://d2.myani.org/v5.4.0/ani-5.4.0.ipa",
           "size": 35415105,
           "buildVersion": "50400",
           "minOSVersion": "14.0"
@@ -183,7 +183,7 @@
           "version": "5.5.0-beta01",
           "date": "2026-05-13T09:27:25.000Z",
           "localizedDescription": "- 优化手机播放页界面\r\n- 手机上支持查看详细弹幕列表\r\n- 增加弹幕正则过滤规则导入导出并加入设置备份 by @Calv1nJ in https://github.com/open-ani/animeko/pull/3007",
-          "downloadURL": "https://d2.myani.org/v5.5.0-beta01/ani-5.5.0-beta01.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-beta01/ani-5.5.0-beta01.ipa",
           "size": 29896178,
           "buildVersion": "50507",
           "minOSVersion": "14.0"
