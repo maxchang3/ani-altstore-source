@@ -60,7 +60,7 @@
           "version": "5.5.2",
           "date": "2026-05-26T09:33:48.000Z",
           "localizedDescription": "- 修复桌面端 JCEF 进程占用资源过高问题\r\n- 支持 Desktop 刷新验证码页面\r\n\r\n---\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v5.5.1...v5.5.2",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.2/ani-5.5.2.ipa",
+          "downloadURL": "https://d2.myani.org/v5.5.2/ani-5.5.2.ipa",
           "size": 29924579,
           "buildVersion": "50520",
           "minOSVersion": "14.0"
@@ -96,7 +96,7 @@
           "version": "5.4.2",
           "date": "2026-04-11T04:49:10.000Z",
           "localizedDescription": "- 修复播放器暂停后可能无法继续播放",
-          "downloadURL": "https://d2.myani.org/v5.4.2/ani-5.4.2.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.2/ani-5.4.2.ipa",
           "size": 35355797,
           "buildVersion": "50420",
           "minOSVersion": "14.0"
@@ -183,7 +183,7 @@
           "version": "5.5.0-beta01",
           "date": "2026-05-13T09:27:25.000Z",
           "localizedDescription": "- 优化手机播放页界面\r\n- 手机上支持查看详细弹幕列表\r\n- 增加弹幕正则过滤规则导入导出并加入设置备份 by @Calv1nJ in https://github.com/open-ani/animeko/pull/3007",
-          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.0-beta01/ani-5.5.0-beta01.ipa",
+          "downloadURL": "https://d2.myani.org/v5.5.0-beta01/ani-5.5.0-beta01.ipa",
           "size": 29896178,
           "buildVersion": "50507",
           "minOSVersion": "14.0"
@@ -237,7 +237,7 @@
           "version": "5.4.0-beta02",
           "date": "2026-03-18T04:25:52.000Z",
           "localizedDescription": "- 修复缓存的各种问题\r\n- 修复 iOS 无法播放缓存的问题\r\n- 支持手动通过数据源的搜索验证\r\n- 支持发评论到 ani 服务器",
-          "downloadURL": "https://d2.myani.org/v5.4.0-beta02/ani-5.4.0-beta02.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.4.0-beta02/ani-5.4.0-beta02.ipa",
           "size": 35393765,
           "buildVersion": "50406",
           "minOSVersion": "14.0"
