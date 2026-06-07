@@ -95,8 +95,20 @@ export const updateToSourceVersion = async (update: Update): Promise<SourceVersi
   )
 
   try {
-    const firstSuccess = await Promise.any(jobs)
+    // 使用 allSettled 而非 any，确保按 downloadUrlAlternatives
+    // 的原始顺序选择第一个成功的 URL，避免因网络波动导致
+    // downloadURL 在不同 CI 运行之间反复变化。
+    const results = await Promise.allSettled(jobs)
     abortController.abort()
+
+    const firstSuccess = results.find(
+      (r): r is PromiseFulfilledResult<IpaVersionResult> => r.status === 'fulfilled'
+    )?.value
+
+    if (!firstSuccess) {
+      console.warn(`[warn] ${update.version} 无可用的下载链接或无法解析 IPA。`)
+      return null
+    }
 
     return {
       version: update.version,
