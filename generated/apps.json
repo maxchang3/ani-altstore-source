@@ -162,6 +162,15 @@
       },
       "versions": [
         {
+          "version": "5.7.0-alpha01",
+          "date": "2026-06-10T07:24:55.000Z",
+          "localizedDescription": "- 优化 Web 数据源选择\r\n- 修复断网时无法加载缓存的弹幕\r\n- 修复 Desktop JCEF 进程导致系统卡死",
+          "downloadURL": "https://d2.myani.org/v5.7.0-alpha01/ani-5.7.0-alpha01.ipa",
+          "size": 30342304,
+          "buildVersion": "50701",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.6.0-alpha01",
           "date": "2026-05-25T09:12:18.000Z",
           "localizedDescription": "- 新增剧集评论表情回应，并优化回应区域的显示体验\r\n- 增强网页数据源的验证码检测能力\r\n- 尽快释放 CEF 资源, 减少播放时的占用",
