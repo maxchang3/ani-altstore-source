@@ -69,7 +69,7 @@
           "version": "5.5.1",
           "date": "2026-05-24T06:22:10.000Z",
           "localizedDescription": "- 新增 PikPak 云端离线下载，可作为 BT 播放不稳定时的备选方案 (#2978 by @NihilDigit)\r\n- 桌面端支持最小化到系统托盘 (#2934 by @Mystery406)\r\n- Linux 播放时可通过 D-Bus 阻止屏幕保护和自动锁屏 (#2925 by @moetayuko)\r\n- 搜索结果支持按发布日期排序 (#2941 by @wellorbetter)\r\n- 弹幕正则过滤规则支持导入导出，并会纳入设置备份 (#3007 by @Calv1nJ)\r\n- 播放页、剧集页和弹幕列表体验优化，手机端也可查看弹幕列表\r\n- Bangumi 登录过期时会提示重新登录\r\n- 优先使用弹弹 Play 的 Bangumi 条目映射，提升条目匹配准确性",
-          "downloadURL": "https://d2.myani.org/v5.5.1/ani-5.5.1.ipa",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v5.5.1/ani-5.5.1.ipa",
           "size": 29923207,
           "buildVersion": "50510",
           "minOSVersion": "14.0"
