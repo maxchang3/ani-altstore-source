@@ -162,6 +162,15 @@
       },
       "versions": [
         {
+          "version": "5.7.0-beta01",
+          "date": "2026-06-17T04:28:55.000Z",
+          "localizedDescription": "- 播放历史支持云同步，多设备之间可延续观看进度\r\n- 收藏页新增分页缓存，返回和翻页时加载更顺畅 (#3081 by @GeneralK1ng)\r\n- 优化数据源查询的浏览器并发控制，降低后台任务对浏览体验的影响",
+          "downloadURL": "https://d2.myani.org/v5.7.0-beta01/ani-5.7.0-beta01.ipa",
+          "size": 30495582,
+          "buildVersion": "50707",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.7.0-alpha01",
           "date": "2026-06-10T07:24:55.000Z",
           "localizedDescription": "- 优化 Web 数据源选择\r\n- 修复断网时无法加载缓存的弹幕\r\n- 修复 Desktop JCEF 进程导致系统卡死",
