@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "5.7.0",
+          "date": "2026-06-28T06:14:58.000Z",
+          "localizedDescription": "- 新增播放历史云同步\r\n- 收藏页新增分页缓存机制 (#3081 by @GeneralK1ng)\r\n- 修复快速选择数据源问题\r\n- 修复无法加载保存的播放进度",
+          "downloadURL": "https://d2.myani.org/v5.7.0/ani-5.7.0.ipa",
+          "size": 30504862,
+          "buildVersion": "50700",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.6.0",
           "date": "2026-05-28T19:26:21.000Z",
           "localizedDescription": "- 首页推荐、放送日程、搜索和短评改用 Animeko 服务\r\n- 启用剧集评论表情回复，并优化评论区交互和显示效果\r\n- 优先使用弹弹 play 的 Bangumi ID 映射，提升条目匹配准确性",
