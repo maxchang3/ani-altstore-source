@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "5.7.1",
+          "date": "2026-07-09T01:17:21.000Z",
+          "localizedDescription": "- 修复集合列表海报不显示的问题 (#3123 by @proffitteoy)",
+          "downloadURL": "https://d2.myani.org/v5.7.1/ani-5.7.1.ipa",
+          "size": 30505730,
+          "buildVersion": "50710",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.7.0",
           "date": "2026-06-28T06:14:58.000Z",
           "localizedDescription": "- 新增播放历史云同步\r\n- 收藏页新增分页缓存机制 (#3081 by @GeneralK1ng)\r\n- 修复快速选择数据源问题\r\n- 修复无法加载保存的播放进度",
