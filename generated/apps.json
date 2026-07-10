@@ -180,6 +180,15 @@
       },
       "versions": [
         {
+          "version": "6.0.0-alpha01",
+          "date": "2026-07-10T11:41:49.000Z",
+          "localizedDescription": "- Windows 和 macOS 更换为 mpv 播放器内核，支持硬件解码和渲染\r\n- 全新条目详情页设计，新增角色和声优查看\r\n- 新增实验性 HLS 广告过滤功能 (#3097 by @NihilDigit)",
+          "downloadURL": "https://d2.myani.org/v6.0.0-alpha01/ani-6.0.0-alpha01.ipa",
+          "size": 30898646,
+          "buildVersion": "60001",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.7.0-beta02",
           "date": "2026-06-21T13:45:22.000Z",
           "localizedDescription": "- 修复播放时已保存进度可能未正确加载的问题",
