@@ -180,6 +180,15 @@
       },
       "versions": [
         {
+          "version": "6.0.0-alpha02",
+          "date": "2026-07-14T06:04:56.000Z",
+          "localizedDescription": "- 支持拖动进度条时预览画面，在设置开启或关闭\r\n- Android 和 iOS 为标题栏和导航栏支持毛玻璃，在设置开启或关闭\r\n- 新增播放统计面板，播放页按 TAB 开启 (#3120 by @wjb6666)\r\n- Linux AppImage 支持增量更新，更新下载体积更小\r\n- 播放器支持通过滑动手势进入或退出全屏",
+          "downloadURL": "https://d2.myani.org/v6.0.0-alpha02/ani-6.0.0-alpha02.ipa",
+          "size": 31112838,
+          "buildVersion": "60002",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.0.0-alpha01",
           "date": "2026-07-10T11:41:49.000Z",
           "localizedDescription": "- Windows 和 macOS 更换为 mpv 播放器内核，支持硬件解码和渲染\r\n- 全新条目详情页设计，新增角色和声优查看\r\n- 新增实验性 HLS 广告过滤功能 (#3097 by @NihilDigit)",
