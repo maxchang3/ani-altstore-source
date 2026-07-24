@@ -180,6 +180,15 @@
       },
       "versions": [
         {
+          "version": "6.0.0-beta01",
+          "date": "2026-07-24T11:22:44.000Z",
+          "localizedDescription": "- 新增一起看 (syncplay) (proposed by @qian-xuan)\r\n- 支持自动通过数据源图形验证码保护 (#3172 by @proffitteoy)\r\n- Android 支持视频截图，libass 字幕渲染，wsola 音频引擎 (#3156 by @NihilDigit)\r\n- 为 Windows arm 和 Linux x64 启用 mpv 播放器 (#3155 by @NihilDigit)",
+          "downloadURL": "https://d2.myani.org/v6.0.0-beta01/ani-6.0.0-beta01.ipa",
+          "size": 40458955,
+          "buildVersion": "60007",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.0.0-alpha02",
           "date": "2026-07-14T06:04:56.000Z",
           "localizedDescription": "- 支持拖动进度条时预览画面，在设置开启或关闭\r\n- Android 和 iOS 为标题栏和导航栏支持毛玻璃，在设置开启或关闭\r\n- 新增播放统计面板，播放页按 TAB 开启 (#3120 by @wjb6666)\r\n- Linux AppImage 支持增量更新，更新下载体积更小\r\n- 播放器支持通过滑动手势进入或退出全屏",
