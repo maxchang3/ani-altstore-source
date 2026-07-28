@@ -180,6 +180,15 @@
       },
       "versions": [
         {
+          "version": "6.0.0-beta02",
+          "date": "2026-07-28T07:46:10.000Z",
+          "localizedDescription": "- 新增 Windows aarch64 target (WoA) 支持  (#3222 by @NihilDigit)\r\n- 数据源管理页支持批量操作\r\n- 优化移动端播放器滑动快进取消方式，支持上滑取消 (#3212 by @NihilDigit)",
+          "downloadURL": "https://d2.myani.org/v6.0.0-beta02/ani-6.0.0-beta02.ipa",
+          "size": 40510226,
+          "buildVersion": "60008",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.0.0-beta01",
           "date": "2026-07-24T11:22:44.000Z",
           "localizedDescription": "- 新增一起看 (syncplay) (proposed by @qian-xuan)\r\n- 支持自动通过数据源图形验证码保护 (#3172 by @proffitteoy)\r\n- Android 支持视频截图，libass 字幕渲染，wsola 音频引擎 (#3156 by @NihilDigit)\r\n- 为 Windows arm 和 Linux x64 启用 mpv 播放器 (#3155 by @NihilDigit)",
