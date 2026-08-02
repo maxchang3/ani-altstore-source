@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "6.0.0",
+          "date": "2026-08-01T18:38:19.000Z",
+          "localizedDescription": "- 支持与好友一起看番，大幅改善自动选源能力和速度，视频内广告过滤\r\n- 全新条目详情页，支持查看角色和声优的信息和关联条目\r\n- 桌面端切换为 mpv 播放器内核，大幅优化性能",
+          "downloadURL": "https://d2.myani.org/v6.0.0/ani-6.0.0.ipa",
+          "size": 41391524,
+          "buildVersion": "60000",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "5.7.1",
           "date": "2026-07-09T01:17:21.000Z",
           "localizedDescription": "- 修复集合列表海报不显示的问题 (#3123 by @proffitteoy)",
