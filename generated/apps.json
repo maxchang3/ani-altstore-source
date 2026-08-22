@@ -189,6 +189,15 @@
       },
       "versions": [
         {
+          "version": "6.1.0-alpha02",
+          "date": "2026-08-21T18:09:25.000Z",
+          "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源流程，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能，显示评论来源\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)",
+          "downloadURL": "https://d2.myani.org/v6.1.0-alpha02/ani-6.1.0-alpha02.ipa",
+          "size": 44251362,
+          "buildVersion": "60102",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.0.0-beta02",
           "date": "2026-07-28T07:46:10.000Z",
           "localizedDescription": "- 新增 Windows aarch64 target (WoA) 支持  (#3222 by @NihilDigit)\r\n- 数据源管理页支持批量操作\r\n- 优化移动端播放器滑动快进取消方式，支持上滑取消 (#3212 by @NihilDigit)",
