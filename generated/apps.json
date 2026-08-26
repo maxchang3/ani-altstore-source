@@ -189,6 +189,15 @@
       },
       "versions": [
         {
+          "version": "6.1.0-beta01",
+          "date": "2026-08-26T08:28:01.000Z",
+          "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源流程，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面",
+          "downloadURL": "https://d2.myani.org/v6.1.0-beta01/ani-6.1.0-beta01.ipa",
+          "size": 44434411,
+          "buildVersion": "60107",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.1.0-alpha03",
           "date": "2026-08-23T01:53:29.000Z",
           "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源流程，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能，显示评论来源\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面",
