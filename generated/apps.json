@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "6.1.0",
+          "date": "2026-08-28T16:41:30.000Z",
+          "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源步骤，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面",
+          "downloadURL": "https://d2.myani.org/v6.1.0/ani-6.1.0.ipa",
+          "size": 44425669,
+          "buildVersion": "60100",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.0.0",
           "date": "2026-08-01T18:38:19.000Z",
           "localizedDescription": "- 支持与好友一起看番，大幅改善自动选源能力和速度，视频内广告过滤\r\n- 全新条目详情页，支持查看角色和声优的信息和关联条目\r\n- 桌面端切换为 mpv 播放器内核，大幅优化性能",
@@ -348,15 +357,6 @@
           "downloadURL": "https://d2.myani.org/v5.4.0-beta03/ani-5.4.0-beta03.ipa",
           "size": 35401953,
           "buildVersion": "50407",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "5.4.0-beta02",
-          "date": "2026-03-18T04:25:52.000Z",
-          "localizedDescription": "- 修复缓存的各种问题\r\n- 修复 iOS 无法播放缓存的问题\r\n- 支持手动通过数据源的搜索验证\r\n- 支持发评论到 ani 服务器",
-          "downloadURL": "https://d2.myani.org/v5.4.0-beta02/ani-5.4.0-beta02.ipa",
-          "size": 35393765,
-          "buildVersion": "50406",
           "minOSVersion": "14.0"
         }
       ]
