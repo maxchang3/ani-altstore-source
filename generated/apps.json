@@ -198,6 +198,15 @@
       },
       "versions": [
         {
+          "version": "6.2.0-alpha01",
+          "date": "2026-09-17T09:39:06.000Z",
+          "localizedDescription": "- 支持处理 Bangumi 收藏冲突，可在合并页查看冲突提示、选择保留内容并应用合并\r\n- 人物和角色页接入 Animeko 评论服务，支持发评论、回复、表情、点赞和举报\r\n- 弹幕发送支持选择颜色和位置，可发送顶部、滚动或底部弹幕\r\n- PC 图片查看器改为独立窗口，支持缩放、保存、复制、拖到其他应用和触摸板手势\r\n- 搜索支持按年份和季度筛选，年份改为下拉选择 (#3396 by @Bonger34)\r\n- 首次启动不再显示新手引导，网络检测失败会改用 toast 提示\r\n- 剧集播出时间改为与 Bangumi 日期和服务端算法一致，时间表支持时间未定和跨午夜刷新\r\n- 已缓存剧集现在会显示观看进度\r\n- 修复下载不支持分段的整集视频时可能因内存占用过高导致崩溃的问题 (#3407 by @azusachino)",
+          "downloadURL": "https://d2.myani.org/v6.2.0-alpha01/ani-6.2.0-alpha01.ipa",
+          "size": 44773293,
+          "buildVersion": "60201",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.1.0-beta01",
           "date": "2026-08-26T08:28:01.000Z",
           "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源流程，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面",
