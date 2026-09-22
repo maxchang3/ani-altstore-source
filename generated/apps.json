@@ -198,6 +198,15 @@
       },
       "versions": [
         {
+          "version": "6.2.0-beta01",
+          "date": "2026-09-22T08:19:42.000Z",
+          "localizedDescription": "- 新增 Android TV 客户端，支持大屏首页、条目详情、播放、收藏、搜索、每日放送、设置与电视端扫码登录 (#3271)，感谢 @GrahamZen 在 #3217 中的前期探索\r\n- 缓存支持按线路批量选择多集，并按条目级查询资源，下载多集更顺畅\r\n- 自动跳过 OP/ED 前会提前缓存跳转后的内容\r\n- 条目详情新增系列关系图，可直观查看续集、番外和衍生并直接跳转\r\n- 剧集列表新增 TMDB 剧照、观看进度条与已看完角标，选集识别更直观\r\n- 在线播放进度条会显示已缓冲范围，缓冲时会显示当前下载速度\r\n- 播放页支持拖入本地视频文件直接播放，仅本次播放有效\r\n- 修复只标画质或语言的线路被当成集号不明而无法匹配的问题 (#3345 by @GrahamZen)",
+          "downloadURL": "https://d2.myani.org/v6.2.0-beta01/ani-6.2.0-beta01.ipa",
+          "size": 46220023,
+          "buildVersion": "6.2.31",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.2.0-alpha01",
           "date": "2026-09-17T09:39:06.000Z",
           "localizedDescription": "- 支持处理 Bangumi 收藏冲突，可在合并页查看冲突提示、选择保留内容并应用合并\r\n- 人物和角色页接入 Animeko 评论服务，支持发评论、回复、表情、点赞和举报\r\n- 弹幕发送支持选择颜色和位置，可发送顶部、滚动或底部弹幕\r\n- PC 图片查看器改为独立窗口，支持缩放、保存、复制、拖到其他应用和触摸板手势\r\n- 搜索支持按年份和季度筛选，年份改为下拉选择 (#3396 by @Bonger34)\r\n- 首次启动不再显示新手引导，网络检测失败会改用 toast 提示\r\n- 剧集播出时间改为与 Bangumi 日期和服务端算法一致，时间表支持时间未定和跨午夜刷新\r\n- 已缓存剧集现在会显示观看进度\r\n- 修复下载不支持分段的整集视频时可能因内存占用过高导致崩溃的问题 (#3407 by @azusachino)",
@@ -348,15 +357,6 @@
           "downloadURL": "https://d2.myani.org/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
           "size": 35418371,
           "buildVersion": "50409",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "5.4.0-beta04",
-          "date": "2026-03-25T02:36:14.000Z",
-          "localizedDescription": "- 修复 HLS 缓存合并失败\r\n- 缓存错误增加提示",
-          "downloadURL": "https://d2.myani.org/v5.4.0-beta04/ani-5.4.0-beta04.ipa",
-          "size": 35411429,
-          "buildVersion": "50408",
           "minOSVersion": "14.0"
         }
       ]
