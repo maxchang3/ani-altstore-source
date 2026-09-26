@@ -48,6 +48,15 @@
       },
       "versions": [
         {
+          "version": "6.2.0",
+          "date": "2026-09-26T14:00:29.000Z",
+          "localizedDescription": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告",
+          "downloadURL": "https://d2.myani.org/v6.2.0/ani-6.2.0.ipa",
+          "size": 45401084,
+          "buildVersion": "6.2.99",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "6.1.0",
           "date": "2026-08-28T16:41:30.000Z",
           "localizedDescription": "- 新增画质增强(超分)，支持 Android, Windows 和 macOS (#3291 by @black4der)\r\n- 新增在线源查询缓存，有缓存时跳过查源步骤，大幅加速开播速度\r\n- 播放页新增一起看入口，全屏时隐藏悬浮窗\r\n- 优化评论功能和 UI\r\n- 支持使用 PikPak 加速缓存 BT 源 (#3141 by @NihilDigit)\r\n- 新缓存管理页面",
@@ -348,15 +357,6 @@
           "downloadURL": "https://d2.myani.org/v5.5.0-alpha02/ani-5.5.0-alpha02.ipa",
           "size": 29708860,
           "buildVersion": "50501",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "5.4.0-beta05",
-          "date": "2026-03-25T07:25:53.000Z",
-          "localizedDescription": "- 修复缓存页面闪退\r\n- 修复发送剧集评论闪退",
-          "downloadURL": "https://d2.myani.org/v5.4.0-beta05/ani-5.4.0-beta05.ipa",
-          "size": 35418371,
-          "buildVersion": "50409",
           "minOSVersion": "14.0"
         }
       ]
