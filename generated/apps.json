@@ -145,15 +145,6 @@
           "size": 35355797,
           "buildVersion": "50420",
           "minOSVersion": "14.0"
-        },
-        {
-          "version": "5.4.1",
-          "date": "2026-04-10T09:16:09.000Z",
-          "localizedDescription": "- 修复搜索页无法搜索和闪退的问题",
-          "downloadURL": "https://d2.myani.org/v5.4.1/ani-5.4.1.ipa",
-          "size": 35356124,
-          "buildVersion": "50410",
-          "minOSVersion": "14.0"
         }
       ]
     },
@@ -197,6 +188,15 @@
         "privacy": {}
       },
       "versions": [
+        {
+          "version": "6.3.0-beta01",
+          "date": "2026-10-09T11:19:10.000Z",
+          "localizedDescription": "- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 缓存选源支持手动查找，选定一集后可批量下载同一线路的其他剧集\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 提升分季动画的选集准确性，自动匹配和手动查找可识别网站合并整季或连续编号的剧集，减少选错集和漏集",
+          "downloadURL": "https://d2.myani.org/v6.3.0-beta01/ani-6.3.0-beta01.ipa",
+          "size": 46323955,
+          "buildVersion": "6.3.31",
+          "minOSVersion": "14.0"
+        },
         {
           "version": "6.3.0-alpha01",
           "date": "2026-10-02T05:36:38.000Z",
