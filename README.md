@@ -2,7 +2,7 @@
 
 [English](#english)
 
-[Animeko](https://myani.org) 的 AltStore 源。支持 AltStore Classic、[SideStore](https://sidestore.io/) 和 [LiveContainer](https://github.com/LiveContainer/LiveContainer) 等使用 AltStore 源格式的客户端。安装步骤见 [Animeko iOS 安装指南](https://animeko.org/wiki/ios-install)的「方法二 → 方式 B」。
+[Animeko](https://myani.org) 的 AltStore 源。支持 AltStore Classic、[SideStore](https://sidestore.io/) 和 [LiveContainer](https://github.com/LiveContainer/LiveContainer) 等使用 AltStore 源格式的客户端。安装步骤见 [Animeko iOS 安装指南](https://animeko.org/wiki/ios-install) 的「方法二 → 方式 B」。
 
 ## 添加源<sup>*</sup>
 

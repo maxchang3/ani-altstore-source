@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -46,7 +46,7 @@ jobs:
       - run: bun test
 
       - name: Restore IPA metadata cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .cache/ipa-metadata.json
           key: ${{ runner.os }}-ipa-v1-${{ github.run_id }}-${{ github.run_attempt }}
