@@ -16,8 +16,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version-file: package.json
       - run: bun install --frozen-lockfile
 
       - run: bun lint
       - run: bun typecheck
+      - run: bun test
+      - run: bun verify

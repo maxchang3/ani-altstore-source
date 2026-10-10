@@ -14,6 +14,9 @@
   "author": "maxchang3",
   "scripts": {
     "generate": "bun run src/index.ts",
+    "generate:reprobe": "bun run src/index.ts --reprobe",
+    "verify": "bun run src/verify.ts",
+    "test": "bun test",
     "lint": "biome check",
     "lint:fix": "biome check --write .",
     "prepare": "simple-git-hooks",

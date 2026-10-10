@@ -24,6 +24,8 @@ export interface Source {
 }
 
 export interface SourceVersion {
+  /** Upstream tag, retained for channel classification and failure recovery. */
+  releaseTag: string
   version: string
   buildVersion: string
   date: string
@@ -35,6 +37,7 @@ export interface SourceVersion {
 }
 
 export interface App {
+  beta?: boolean
   name: string
   bundleIdentifier: string
   marketplaceID?: string

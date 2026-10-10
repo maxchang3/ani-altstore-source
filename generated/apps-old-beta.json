@@ -1,0 +1,105 @@
+{
+  "name": "OpenAni (Legacy Pre-Release)",
+  "iconURL": "https://avatars.githubusercontent.com/u/166622089",
+  "website": "https://myani.org",
+  "tintColor": "#6156e2",
+  "featuredApps": [
+    "org.openani.Animeko"
+  ],
+  "apps": [
+    {
+      "name": "Animeko (Legacy Pre-Release)",
+      "bundleIdentifier": "org.openani.Animeko",
+      "developerName": "openani",
+      "localizedDescription": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。",
+      "iconURL": "https://avatars.githubusercontent.com/u/166622089",
+      "tintColor": "#6c9cc4",
+      "category": "entertainment",
+      "screenshots": {
+        "iphone": [
+          "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/home.png",
+          "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/anime-schedule.png",
+          "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/subject-collection.png",
+          "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/search-by-tag.png",
+          "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/subject-details.png",
+          "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/subject-rating.png"
+        ],
+        "ipad": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/pc-home.png",
+            "width": 2966,
+            "height": 1576
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/pc-search.png",
+            "width": 2722,
+            "height": 1742
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/open-ani/animeko/main/.readme/images/features/pc-search-detail.png",
+            "width": 2528,
+            "height": 1742
+          }
+        ]
+      },
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "versions": [
+        {
+          "releaseTag": "5.3.0-beta01",
+          "version": "5.3.0",
+          "buildVersion": "30200",
+          "minOSVersion": "14.0",
+          "date": "2026-01-28T12:49:37.000Z",
+          "localizedDescription": "🧪 预发布 5.3.0-beta01\n\n- 重构缓存引擎，全新缓存页面。！！更新会导致缓存失效，请提前备份！！\r\n- 固定在线源选择偏好，加速选源速度\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v5.3.0-alpha02...v5.3.0-beta01",
+          "downloadURL": "https://d2.myani.org/v5.3.0-beta01/ani-5.3.0-beta01.ipa",
+          "size": 31056122
+        },
+        {
+          "releaseTag": "5.1.0-beta01",
+          "version": "5.1.0",
+          "buildVersion": "30200",
+          "minOSVersion": "14.0",
+          "date": "2025-10-21T12:33:34.000Z",
+          "localizedDescription": "🧪 预发布 5.1.0-beta01\n\n- 全新播放页样式\r\n- 移动端内容沉浸 (#2608 by @Daydreamer-riri)",
+          "downloadURL": "https://d2.myani.org/v5.1.0-beta01/ani-5.1.0-beta01.ipa",
+          "size": 34172342
+        },
+        {
+          "releaseTag": "5.0.0-beta02",
+          "version": "5.0.0",
+          "buildVersion": "30200",
+          "minOSVersion": "14.0",
+          "date": "2025-09-06T10:21:55.000Z",
+          "localizedDescription": "🧪 预发布 5.0.0-beta02\n\n- Animeko 5.0 增加新的账号系统。现在你可以使用邮箱注册 Animeko 账号，支持跨设备同步收藏，无需绑定 Bangumi 账号。但你仍然可以绑定 Bangumi 账号，收藏将自动双向同步。\r\n- 对于在 4.x 登录过 Bangumi 账号的，将自动创建 Animeko 账号。你可以在设置中绑定邮箱，也可以继续只使用 Bangumi 账号登录。\r\n- 修复 Bangumi 同步问题",
+          "downloadURL": "https://d2.myani.org/v5.0.0-beta02/ani-5.0.0-beta02.ipa",
+          "size": 35619596
+        },
+        {
+          "releaseTag": "4.11.0-beta01",
+          "version": "4.11.0",
+          "buildVersion": "30200",
+          "minOSVersion": "14.0",
+          "date": "2025-05-22T05:37:34.000Z",
+          "localizedDescription": "🧪 预发布 4.11.0-beta01\n\n* 修复桌面端播放时切换数据源可能导致 UI 卡死\r\n* 桌面端新数据源选择器样式\r\n* 搜索番剧条目时支持过滤已抛弃的条目 (#2129 by @solelper)\r\n* 播放 BT 数据源时自动创建其缓存",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.11.0-beta01/ani-4.11.0-beta01.ipa",
+          "size": 34735073
+        },
+        {
+          "releaseTag": "4.10.0-beta02",
+          "version": "4.10.0",
+          "buildVersion": "30200",
+          "minOSVersion": "14.0",
+          "date": "2025-05-01T04:49:03.000Z",
+          "localizedDescription": "🧪 预发布 4.10.0-beta02\n\n- 优化缓存功能\r\n- 优化 Windows 字体显示\r\n- 支持 iOS 15",
+          "downloadURL": "https://github.com/open-ani/ani/releases/download/v4.10.0-beta02/ani-4.10.0-beta02.ipa",
+          "size": 34534119
+        }
+      ],
+      "beta": true
+    }
+  ],
+  "news": []
+}

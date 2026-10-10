@@ -1,126 +1,45 @@
-import { parseBuffer } from 'bplist-parser'
-import { strFromU8, unzipSync } from 'fflate'
-import { parse } from 'plist'
+import { type IpaMetadata, normalizeDownloadURL, probeIpa } from './ipa'
+import { APP_BUNDLE_IDENTIFIER, isBetaTag } from './releases'
 import type { SourceVersion, Update } from './types'
 
-// Extract from plist
-const DEFAULT_MIN_OS_VERSION = '14.0'
-
-interface IpaVersionResult {
-  normalizedURL: string
-  size: number
-  buildVersion: string
-}
-
-interface InfoPlist extends Record<string, unknown> {
-  CFBundleVersion?: string
-}
-
-const isRecord = (value: unknown): value is Record<string, unknown> =>
-  value !== null && typeof value === 'object'
-
-const normalizeDownloadURL = (url: string) =>
-  url.startsWith('https://ghfast.top/') ? url.replace('https://ghfast.top/', '') : url
-
-const parseInfoPlist = (plistBytes: Uint8Array, sourceUrl: string): InfoPlist => {
-  const header = strFromU8(plistBytes.subarray(0, 6))
-
-  if (header === 'bplist') {
-    const parsed = parseBuffer(Buffer.from(plistBytes))
-    const root = parsed[0]
-    if (isRecord(root)) return root
-    throw new Error(`${sourceUrl} 的二进制 Info.plist 解析结果无效`)
-  }
-
-  const plistContent = strFromU8(plistBytes)
-  const parsed = parse(plistContent)
-  if (isRecord(parsed)) return parsed
-
-  throw new Error(`${sourceUrl} 的 XML Info.plist 解析结果无效`)
-}
-
-const normalizeBuildVersion = (value: InfoPlist['CFBundleVersion'], sourceUrl: string): string => {
-  if (typeof value === 'string') {
-    const normalized = value.trim()
-    if (normalized.length > 0) return normalized
-  }
-
-  throw new Error(`${sourceUrl} 的 Info.plist 缺少有效的 CFBundleVersion`)
-}
-
-const extractBuildVersionFromIpa = (ipaBuffer: ArrayBuffer, sourceUrl: string): string => {
-  const zipEntries = unzipSync(new Uint8Array(ipaBuffer))
-  const infoPlistPath = Object.keys(zipEntries).find((entry) =>
-    /^Payload\/[^/]+\.app\/Info\.plist$/.test(entry)
-  )
-
-  if (!infoPlistPath) throw new Error(`${sourceUrl} 内未找到 Payload/*.app/Info.plist`)
-
-  const plistData = parseInfoPlist(zipEntries[infoPlistPath], sourceUrl)
-  return normalizeBuildVersion(plistData.CFBundleVersion, sourceUrl)
-}
-
-const downloadAndExtractBuildVersion = async (
-  url: string,
-  signal?: AbortSignal
-): Promise<IpaVersionResult> => {
-  const normalizedURL = normalizeDownloadURL(url)
-  const response = await fetch(normalizedURL, { signal })
-
-  if (!response.ok) throw new Error(`下载 IPA 失败: HTTP ${response.status}`)
-
-  const ipaBuffer = await response.arrayBuffer()
-  const contentLength = response.headers.get('content-length')
-  const parsedContentLength = contentLength ? parseInt(contentLength, 10) : Number.NaN
-  const size = Number.isNaN(parsedContentLength) ? ipaBuffer.byteLength : parsedContentLength
-
-  return {
-    normalizedURL,
-    size,
-    buildVersion: extractBuildVersionFromIpa(ipaBuffer, normalizedURL),
-  }
-}
+export type IpaResolver = (url: string) => Promise<IpaMetadata>
 
 export const timestampToISO = (timestamp: number) => new Date(timestamp * 1000).toISOString()
 
-export const updateToSourceVersion = async (update: Update): Promise<SourceVersion | null> => {
-  if (update.downloadUrlAlternatives.length === 0) {
-    console.warn(`[warn] ${update.version} 无可用的下载链接。`)
-    return null
+export const updateToSourceVersion = async (
+  update: Update,
+  resolveIpa: IpaResolver = probeIpa,
+  preferredURL?: string
+): Promise<SourceVersion | null> => {
+  // Reuse the last successful URL when still offered by upstream; otherwise keep API order.
+  const urls = [...new Set(update.downloadUrlAlternatives.map(normalizeDownloadURL))]
+  if (preferredURL && urls.includes(preferredURL)) {
+    urls.splice(urls.indexOf(preferredURL), 1)
+    urls.unshift(preferredURL)
   }
-
-  const abortController = new AbortController()
-  const jobs = update.downloadUrlAlternatives.map((url) =>
-    downloadAndExtractBuildVersion(url, abortController.signal)
-  )
-
-  try {
-    // 使用 allSettled 而非 any，确保按 downloadUrlAlternatives
-    // 的原始顺序选择第一个成功的 URL，避免因网络波动导致
-    // downloadURL 在不同 CI 运行之间反复变化。
-    const results = await Promise.allSettled(jobs)
-    abortController.abort()
-
-    const firstSuccess = results.find(
-      (r): r is PromiseFulfilledResult<IpaVersionResult> => r.status === 'fulfilled'
-    )?.value
-
-    if (!firstSuccess) {
-      console.warn(`[warn] ${update.version} 无可用的下载链接或无法解析 IPA。`)
-      return null
+  for (const normalizedURL of urls) {
+    try {
+      const metadata = await resolveIpa(normalizedURL)
+      if (metadata.bundleIdentifier !== APP_BUNDLE_IDENTIFIER) {
+        throw new Error(`包内 Bundle ID 不符: ${metadata.bundleIdentifier}`)
+      }
+      return {
+        releaseTag: update.version,
+        version: metadata.version,
+        buildVersion: metadata.buildVersion,
+        minOSVersion: metadata.minOSVersion,
+        date: timestampToISO(update.publishTime),
+        localizedDescription: isBetaTag(update.version)
+          ? `🧪 预发布 ${update.version}\n\n${update.description}`
+          : update.description,
+        downloadURL: normalizedURL,
+        size: metadata.size,
+      }
+    } catch (error) {
+      console.warn(
+        `[warn] ${update.version} 探测失败 (${normalizedURL}): ${error instanceof Error ? error.message : String(error)}`
+      )
     }
-
-    return {
-      version: update.version,
-      date: timestampToISO(update.publishTime),
-      localizedDescription: update.description,
-      downloadURL: firstSuccess.normalizedURL,
-      size: firstSuccess.size,
-      buildVersion: firstSuccess.buildVersion,
-      minOSVersion: DEFAULT_MIN_OS_VERSION,
-    }
-  } catch {
-    console.warn(`[warn] ${update.version} 无可用的下载链接或无法解析 IPA。`)
-    return null
   }
+  return null
 }

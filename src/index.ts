@@ -1,21 +1,21 @@
-import { generateSource } from './generator'
+import { IpaMetadataCache } from './cache'
+import { generateSources } from './generator'
+import { readPreviousSources, SOURCE_FILES, writeSources } from './output'
 
-console.log('正在生成 Animeko AltStore source...')
+const args = process.argv.slice(2)
+if (args.some((arg) => arg !== '--reprobe')) throw new Error('仅支持 --reprobe 参数')
 
-const outputPath = 'generated/apps.json'
-const source = await generateSource()
-const json = JSON.stringify(source, null, 2)
-await Bun.write(outputPath, json)
+console.log('正在生成 Animeko 稳定版与预发布源...')
+const cache = new IpaMetadataCache({ reprobe: args.includes('--reprobe') })
+await cache.load()
+const previous = await readPreviousSources()
+const sources = await generateSources({ previous, resolveIpa: (url) => cache.probe(url) })
+await cache.save()
+await writeSources(sources)
 
-console.log(`成功生成 apps.json`)
-console.log(`文件已保存到: ${outputPath}`)
-console.log(`包含 ${source.apps[0].versions.length} 个版本`)
-
-const latestVersion = source.apps[0].versions[0]
-if (!latestVersion) {
-  console.log('\n未生成可用版本，请检查上面的警告日志。')
-} else {
-  console.log(`\n最新版本: ${latestVersion.version}`)
-  console.log(`发布时间: ${latestVersion.date}`)
-  console.log(`下载链接: ${latestVersion.downloadURL}`)
+for (const channel of ['stable', 'beta'] as const) {
+  const versions = sources[channel].apps[0].versions
+  console.log(
+    `已生成 generated/${SOURCE_FILES[channel]}：${versions.length} 个版本；最新 ${versions[0].releaseTag} (${versions[0].buildVersion})`
+  )
 }

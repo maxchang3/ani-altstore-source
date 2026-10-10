@@ -1,20 +1,18 @@
 import { Listr } from 'listr2'
-import { coerce, gte } from 'semver'
 import { fetchUpdates } from './api'
-import type { App, Source, SourceVersion } from './types'
-import { updateToSourceVersion } from './utils'
-
-const isBetaVersion = (version: string) => version.includes('alpha') || version.includes('beta')
-
-// 比较版本号是否满足最小版本要求 (>= 5.4.x)
-const meetsMinimumVersion = (version: string, minimumVersion: string = '5.4.0'): boolean => {
-  const parsedVersion = coerce(version)
-  return parsedVersion ? gte(parsedVersion, minimumVersion) : false
-}
+import {
+  APP_BUNDLE_IDENTIFIER,
+  isBetaTag,
+  meetsMinimumVersion,
+  type ReleaseChannel,
+} from './releases'
+import type { App, Source, SourceVersion, Update } from './types'
+import { type IpaResolver, updateToSourceVersion } from './utils'
+import { assertSource, assertUpdates } from './validation'
 
 const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
   name: baseName,
-  bundleIdentifier: 'org.animeko.animeko',
+  bundleIdentifier: APP_BUNDLE_IDENTIFIER,
   developerName: 'openani',
   localizedDescription:
     '集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。',
@@ -57,72 +55,98 @@ const appTemplate = (baseName: string): Omit<App, 'versions'> => ({
   },
 })
 
-export const generateSource = async (): Promise<Source> => {
-  const { updates } = await fetchUpdates()
+export interface GeneratedSources {
+  stable: Source
+  beta: Source
+}
 
-  // 筛选出满足最小版本要求的版本 (>= 5.4.x)
+interface GenerateOptions {
+  updates?: Update[]
+  previous?: Partial<GeneratedSources>
+  resolveIpa?: IpaResolver
+}
+
+const makeSource = (channel: ReleaseChannel, versions: SourceVersion[]): Source => ({
+  name: channel === 'beta' ? 'OpenAni (Pre-Release)' : 'OpenAni',
+  iconURL: 'https://avatars.githubusercontent.com/u/166622089',
+  website: 'https://myani.org',
+  tintColor: '#6156e2',
+  featuredApps: [APP_BUNDLE_IDENTIFIER],
+  apps: [
+    {
+      ...appTemplate(channel === 'beta' ? 'Animeko (Pre-Release)' : 'Animeko'),
+      ...(channel === 'beta' ? { beta: true } : {}),
+      versions,
+    },
+  ],
+  news: [],
+})
+
+export const generateSources = async (options: GenerateOptions = {}): Promise<GeneratedSources> => {
+  const updates = options.updates ?? (await fetchUpdates()).updates
+  assertUpdates({ updates })
   const orderedUpdates = updates
     .filter((update) => meetsMinimumVersion(update.version))
-    .toReversed()
-  const allVersionResults: Array<SourceVersion | null> = new Array(orderedUpdates.length).fill(null)
+    .sort((a, b) => b.publishTime - a.publishTime)
+  if (orderedUpdates.length === 0) throw new Error('更新 API 没有符合最低版本要求的记录')
+
+  const records: Record<ReleaseChannel, Map<string, SourceVersion>> = {
+    stable: new Map(),
+    beta: new Map(),
+  }
+  for (const channel of ['stable', 'beta'] as const) {
+    const previous = options.previous?.[channel]
+    if (!previous) continue
+    assertSource(previous, channel)
+    // Keep known records even when an incremental API stops including older releases.
+    for (const version of previous.apps[0].versions)
+      records[channel].set(version.releaseTag, version)
+  }
 
   const tasks = new Listr(
-    orderedUpdates.map((update, index) => ({
+    orderedUpdates.map((update) => ({
       title: `处理 ${update.version}`,
       task: async () => {
-        const sourceVersion = await updateToSourceVersion(update)
-
-        allVersionResults[index] = sourceVersion
+        // Classify BEFORE converting the tag into CFBundleShortVersionString.
+        const channel = isBetaTag(update.version) ? 'beta' : 'stable'
+        const version = await updateToSourceVersion(
+          update,
+          options.resolveIpa,
+          records[channel].get(update.version)?.downloadURL
+        )
+        if (version) {
+          records[channel].set(update.version, version)
+        } else {
+          const action = records[channel].has(update.version)
+            ? '保留上轮已验证的数据'
+            : '暂不发布，等待下轮重试'
+          console.warn(`[warn] ${update.version} 无法探测：${action}`)
+        }
       },
     })),
-    {
-      concurrent: 6,
-      exitOnError: false,
-    }
+    { concurrent: 6, exitOnError: true }
   )
-
   await tasks.run()
 
-  const allVersions = allVersionResults.filter(
-    (version): version is SourceVersion => version !== null
-  )
-
-  if (allVersionResults.length !== allVersions.length) {
-    const filteredCount = allVersionResults.length - allVersions.length
-    console.warn(`[warn] 过滤掉了 ${filteredCount} 个无法下载的版本`)
+  const versionsFor = (channel: ReleaseChannel): SourceVersion[] => {
+    const seen = new Set<string>()
+    return [...records[channel].values()]
+      .sort(
+        (a, b) =>
+          Date.parse(b.date) - Date.parse(a.date) || a.releaseTag.localeCompare(b.releaseTag)
+      )
+      .filter((version) => {
+        const key = `${version.version}|${version.buildVersion}`
+        if (seen.has(key)) return false
+        seen.add(key)
+        return true
+      })
   }
-
-  const stableVersions: SourceVersion[] = []
-  const betaVersions: SourceVersion[] = []
-
-  for (const version of allVersions) {
-    if (isBetaVersion(version.version)) {
-      betaVersions.push(version)
-    } else {
-      stableVersions.push(version)
-    }
+  const sources = {
+    stable: makeSource('stable', versionsFor('stable')),
+    beta: makeSource('beta', versionsFor('beta')),
   }
-
-  const stableApp: App = {
-    ...appTemplate('Animeko'),
-    versions: stableVersions,
-  }
-
-  const betaApp: App = {
-    ...appTemplate('Animeko (Pre-Release)'),
-    versions: betaVersions,
-    bundleIdentifier: 'org.animeko.animeko.beta',
-  }
-
-  const source: Source = {
-    name: 'OpenAni',
-    iconURL: 'https://avatars.githubusercontent.com/u/166622089',
-    website: 'https://myani.org',
-    tintColor: '#6156e2',
-    featuredApps: [stableApp.bundleIdentifier],
-    apps: [stableApp, betaApp],
-    news: [],
-  }
-
-  return source
+  assertSource(sources.stable, 'stable')
+  assertSource(sources.beta, 'beta')
+  return sources
 }

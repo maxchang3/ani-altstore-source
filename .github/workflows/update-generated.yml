@@ -2,13 +2,25 @@ name: Update Generated Files
 
 on:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '17 */12 * * *'
   workflow_dispatch:
+    inputs:
+      reprobe:
+        description: '忽略 IPA 元数据缓存，重新探测全部包'
+        type: boolean
+        default: false
   push:
     branches:
       - main
     paths:
       - 'src/**'
+      - 'package.json'
+      - 'bun.lock'
+      - '.github/workflows/update-generated.yml'
+
+concurrency:
+  group: update-generated
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -26,21 +38,43 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version-file: package.json
       - run: bun install --frozen-lockfile
 
-      - name: Generate apps.json
-        run: bun generate
+      - run: bun lint
+      - run: bun typecheck
+      - run: bun test
+
+      - name: Restore IPA metadata cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/ipa-metadata.json
+          key: ${{ runner.os }}-ipa-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            ${{ runner.os }}-ipa-v1-
+
+      - name: Generate stable and prerelease sources
+        env:
+          REPROBE: ${{ inputs.reprobe }}
+        run: |
+          if [ "$REPROBE" = "true" ]; then
+            bun generate:reprobe
+          else
+            bun generate
+          fi
+
+      - name: Verify all source files
+        run: bun verify
 
       - name: Check for changes
         id: git-check
         run: |
           git status
-          if git diff --quiet generated/apps.json; then
+          if [ -z "$(git status --porcelain -- generated/apps.json generated/apps-beta.json)" ]; then
             echo "No changes detected"
             echo "has_changes=false" >> $GITHUB_OUTPUT
           else
-            echo "Changes detected in generated/apps.json"
+            echo "Changes detected in source files"
             echo "has_changes=true" >> $GITHUB_OUTPUT
           fi
 
@@ -53,6 +87,6 @@ jobs:
       - name: Commit and push changes
         if: steps.git-check.outputs.has_changes == 'true'
         run: |
-          git add generated/apps.json
+          git add generated/apps.json generated/apps-beta.json
           git commit -m "[Automated] Update Source"
           git push
