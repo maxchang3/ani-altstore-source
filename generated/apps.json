@@ -48,6 +48,16 @@
       },
       "versions": [
         {
+          "releaseTag": "6.3.0",
+          "version": "6.3.0",
+          "buildVersion": "6.3.99",
+          "minOSVersion": "14.0",
+          "date": "2026-10-13T06:34:15.000Z",
+          "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能",
+          "downloadURL": "https://d2.myani.org/v6.3.0/ani-6.3.0.ipa",
+          "size": 46485035
+        },
+        {
           "releaseTag": "6.2.0",
           "version": "6.2.0",
           "buildVersion": "6.2.99",
