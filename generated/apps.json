@@ -48,6 +48,16 @@
       },
       "versions": [
         {
+          "releaseTag": "6.4.1",
+          "version": "6.4.1",
+          "buildVersion": "6.4.199",
+          "minOSVersion": "16.0",
+          "date": "2026-11-18T14:44:06.000Z",
+          "localizedDescription": "- 安全性修复，请桌面端用户立刻更新",
+          "downloadURL": "https://d2.myani.org/v6.4.1/ani-6.4.1.ipa",
+          "size": 48615556
+        },
+        {
           "releaseTag": "6.4.0",
           "version": "6.4.0",
           "buildVersion": "6.4.99",
